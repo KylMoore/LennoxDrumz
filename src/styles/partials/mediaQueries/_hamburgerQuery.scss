@@ -1,7 +1,9 @@
+@use "../variables" as *;
+
 @media (max-width: 700px) {
 
     .hamburger {
-        // display: flex;
+        display: flex;
         position: fixed;
         left: 1rem;
         top: 1rem;

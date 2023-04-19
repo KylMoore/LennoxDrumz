@@ -1,5 +1,7 @@
+@use "./variables" as *;
+
 .hamburger {
-    display: flex;
+    display: none;
     align-items: center;
     margin-right: 1rem;
 

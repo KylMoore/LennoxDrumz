@@ -1,11 +1,78 @@
+@use "./variables" as *;
+
 html {
     font-size: 125%;
 }
 
 body {
-    // background-image: url("/public/assets/old-drum-grey-smaller.jpg");
+    // background-image: url("/public/assets/old-drums-grey.jpg");
     // background-repeat: no-repeat;
     // background-size: center;
+    background-color: $quaternary;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: $roboto;
+    font-weight: 700;
+    color: $fontPrimary;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: $roboto;
+    font-weight: 700;
+    color: $fontPrimary;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: $roboto;
+    font-weight: 700;
+    color: $fontPrimary;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-family: $roboto;
+    font-weight: 700;
+    color: $fontPrimary;
+}
+
+
+p {
+    font-size: 1rem;
+    font-family: $serif;
+    font-weight: 400;
+    color: $fontPrimary;
+}
+
+a {
+    font-size: 1rem;
+    font-family: $serif;
+    font-weight: 400;
+    color: $fontPrimary;
+}
+
+li {
+    font-size: 1rem;
+    font-family: $serif;
+    font-weight: 400;
+    color: $fontPrimary;
+}
+
+div {
+    font-size: 1rem;
+    font-family: $serif;
+    font-weight: 400;
+    color: $fontPrimary;
+}
+
+button {
+    font-size: 1rem;
+    font-family: $serif;
+    font-weight: 400;
+    color: $fontPrimary;
 }
 
 .wrapper {

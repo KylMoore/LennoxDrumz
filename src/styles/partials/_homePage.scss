@@ -1,7 +1,13 @@
+@use "./variables" as *;
+
 .homePage {
     
     .homePageHeader {
-        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        background-color: $fontSecondary;
         padding: 1rem;
         border-radius: 0.5rem;
     }

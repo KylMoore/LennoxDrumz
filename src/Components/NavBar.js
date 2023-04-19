@@ -30,7 +30,7 @@ const NavBar = () => {
               <div onClick={toggleProductsMenu}>
                 Products & Services
                 {showProductsMenu && (
-                  <ul>
+                  <ul className="productsAndServicesDropdown">
                     <li>
                       <Link
                         to="/drums"

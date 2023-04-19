@@ -1,14 +1,4 @@
 html {
-  font-size: 125%;
-}
-
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -432,23 +422,129 @@ template {
   display: none;
 }
 
+html {
+  font-size: 125%;
+}
+
+body {
+  background-color: #058C42;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #020202;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #020202;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #020202;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #020202;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Roboto Serif", serif;
+  font-weight: 400;
+  color: #020202;
+}
+
+a {
+  font-size: 1rem;
+  font-family: "Roboto Serif", serif;
+  font-weight: 400;
+  color: #020202;
+}
+
+li {
+  font-size: 1rem;
+  font-family: "Roboto Serif", serif;
+  font-weight: 400;
+  color: #020202;
+}
+
+div {
+  font-size: 1rem;
+  font-family: "Roboto Serif", serif;
+  font-weight: 400;
+  color: #020202;
+}
+
+button {
+  font-size: 1rem;
+  font-family: "Roboto Serif", serif;
+  font-weight: 400;
+  color: #020202;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
 nav {
   background-color: rgba(0, 0, 0, 0.5);
 }
 nav .navBar {
   display: flex;
+  justify-content: center;
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
 }
-nav .navBar ul li {
+nav .navBar .navBarList {
+  display: flex;
+  justify-content: center;
+}
+nav .navBar .navBarList ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+nav .navBar .navBarList ul li {
   list-style: none;
   padding-right: 10px;
 }
+nav .navBar .navBarList ul li a {
+  text-decoration: none;
+}
+nav .navBar .navBarList ul .productsAndServicesDropdown {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  background-color: grey;
+}
 
 .hamburger {
-  display: flex;
+  display: none;
   align-items: center;
   margin-right: 1rem;
 }
@@ -484,13 +580,18 @@ nav .navBar ul li {
 }
 
 .homePage .homePageHeader {
-  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  background-color: #FFF8F0;
   padding: 1rem;
   border-radius: 0.5rem;
 }
 
 @media (max-width: 700px) {
   .hamburger {
+    display: flex;
     position: fixed;
     left: 1rem;
     top: 1rem;
