@@ -1,8 +1,8 @@
 import React from "react";
 
-const HomePage = () => {
+const About = () => {
   return (
-    <section className="homePage">
+    <section className="aboutSection">
       <div className="homePageHeader wrapper">
         <h1>Lennox Container Group</h1>
         <p>
@@ -41,4 +41,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default About;
