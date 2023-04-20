@@ -6,4 +6,7 @@
 @use "./partials/navBar" as *;
 @use "./partials/hamburgerMenu" as *;
 @use "./partials/homePage" as *;
+@use "./partials/preparingContainers" as *;
+@use "./partials/drumAcceptancePolicy" as *;
+
 @use "./partials/mediaQueries/hamburgerQuery" as *;

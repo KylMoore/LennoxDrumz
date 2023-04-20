@@ -589,6 +589,56 @@ nav .navBar .navBarList ul .productsAndServicesDropdown {
   border-radius: 0.5rem;
 }
 
+.preparingContainersModal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF8F0;
+  border-radius: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.preparingContainersModal h3 {
+  margin: 0;
+}
+.preparingContainersModal h4 {
+  margin: 0;
+}
+.preparingContainersModal ul {
+  margin: 0;
+}
+
+.policyModal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF8F0;
+  border-radius: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.policyModal h3 {
+  margin: 0;
+}
+.policyModal h4 {
+  margin: 0;
+}
+.policyModal ul {
+  margin: 0;
+}
+
 @media (max-width: 700px) {
   .hamburger {
     display: flex;
