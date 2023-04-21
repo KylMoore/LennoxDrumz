@@ -5,10 +5,11 @@ html {
 }
 
 body {
-    // background-image: url("/public/assets/old-drums-grey.jpg");
-    // background-repeat: no-repeat;
-    // background-size: center;
-    background-color: $quaternary;
+    background-image: url("/public/assets/old-drums-grey.jpg");
+    background-repeat: no-repeat;
+    background-size: center;
+    // background-color: $quaternary;
+    
 }
 
 h1 {
@@ -73,6 +74,16 @@ button {
     font-family: $serif;
     font-weight: 400;
     color: $fontPrimary;
+    border: none;
+    border-radius: .25rem;
+    background-color: $secondary;
+    color: $fontSecondary;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+
+    &:hover, &:focus {
+        background-color: $tertiary;
+    }
 }
 
 .wrapper {

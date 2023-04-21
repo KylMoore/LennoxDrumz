@@ -427,7 +427,9 @@ html {
 }
 
 body {
-  background-color: #058C42;
+  background-image: url("/public/assets/old-drums-grey.jpg");
+  background-repeat: no-repeat;
+  background-size: center;
 }
 
 h1 {
@@ -491,6 +493,15 @@ button {
   font-family: "Roboto Serif", serif;
   font-weight: 400;
   color: #020202;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #0D2818;
+  color: #FFF8F0;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+button:hover, button:focus {
+  background-color: #04471C;
 }
 
 .wrapper {
@@ -507,7 +518,8 @@ button {
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  background-color: #e74e35;
 }
 nav .navBar {
   display: flex;
@@ -516,6 +528,12 @@ nav .navBar {
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
+}
+nav .navBar .logo {
+  position: absolute;
+  left: 0;
+  height: 3rem;
+  transform: translate(0%, 5%);
 }
 nav .navBar .navBarList {
   display: flex;
@@ -528,21 +546,54 @@ nav .navBar .navBarList ul {
   padding: 0;
 }
 nav .navBar .navBarList ul li {
+  display: flex;
   list-style: none;
   padding-right: 10px;
 }
+nav .navBar .navBarList ul li div {
+  border-bottom: #e74e35 2px solid;
+  cursor: pointer;
+  position: relative;
+}
+nav .navBar .navBarList ul li div:hover, nav .navBar .navBarList ul li div:focus {
+  border-bottom: #020202 2px solid;
+}
+nav .navBar .navBarList ul li div .productsAndServicesDropdown {
+  position: absolute;
+  flex-direction: column;
+  top: 2rem;
+  padding: 0 3rem;
+  color: #e74e35;
+  background-color: #e74e35;
+  border-radius: 0.25rem;
+}
+nav .navBar .navBarList ul li div .productsAndServicesDropdown li {
+  padding: 0.5rem 0;
+  background-color: #e74e35;
+}
 nav .navBar .navBarList ul li a {
   text-decoration: none;
+  border-bottom: #e74e35 2px solid;
 }
-nav .navBar .navBarList ul .productsAndServicesDropdown {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+nav .navBar .navBarList ul li a:hover, nav .navBar .navBarList ul li a:focus {
+  border-bottom: #020202 2px solid;
+}
+nav .navBar .languageMenu {
   position: absolute;
-  background-color: grey;
+  right: 1rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
-
+nav .navBar .languageMenu select {
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.25rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  background-color: rgba(4, 71, 28, 0.5);
+  margin: 0;
+}
 .hamburger {
   display: none;
   align-items: center;
@@ -637,6 +688,87 @@ nav .navBar .navBarList ul .productsAndServicesDropdown {
 }
 .policyModal ul {
   margin: 0;
+}
+
+footer {
+  background-color: #e74e35;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem 0 0 0;
+}
+footer img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  height: 4rem;
+  align-self: center;
+}
+footer .footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footerContent .footerAddress {
+  display: flex;
+  flex-direction: column;
+}
+footer .footerContent .footerAddress h3 {
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+footer .footerContent .footerAddress ul {
+  padding: 0;
+  margin: 0;
+}
+footer .footerContent .footerAddress ul li {
+  list-style: none;
+  padding: 0 0 1rem 0;
+}
+footer .footerContent .footerAddress ul li p {
+  font-size: 0.75rem;
+  margin: 0;
+  padding: 0 0 0.25rem 0;
+}
+footer .footerContent .footerLinks {
+  display: flex;
+  flex-direction: column;
+}
+footer .footerContent .footerLinks h3 {
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+footer .footerContent .footerLinks ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+footer .footerContent .footerLinks ul li {
+  list-style: none;
+  padding: 0 0 0.25rem 0;
+}
+footer .footerContent .footerLinks ul li a {
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+footer .footerMiddle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+}
+footer .footerMiddle ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+footer .footerMiddle ul li {
+  list-style: none;
+}
+footer .footerMiddle ul li a {
+  text-decoration: none;
+  font-size: 0.75rem;
 }
 
 @media (max-width: 700px) {

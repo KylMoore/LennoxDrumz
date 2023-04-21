@@ -20,6 +20,11 @@ const NavBar = () => {
   return (
     <nav>
       <div className="navBar">
+        <img
+          src="./assets/Lennox-Drum-Ltd.jpg"
+          alt="Lennox Drum logo"
+          className="logo"
+        />
         <div className="navBarList">
           <ul>
             <li>
@@ -92,8 +97,8 @@ const NavBar = () => {
             />
           )}
         </div>
+        <LanguageMenu />
       </div>
-      <LanguageMenu />
     </nav>
   );
 };

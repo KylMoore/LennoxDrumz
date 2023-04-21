@@ -10,7 +10,7 @@ const LanguageMenu = () => {
   };
 
   return (
-    <div>
+    <div className="languageMenu">
       <select value={language} onChange={handleLanguageChange}>
         <option value="en">English</option>
         <option value="fr">Français</option>
