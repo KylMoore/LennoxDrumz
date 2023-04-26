@@ -11,8 +11,6 @@ import Contact from "./Components/Contact";
 import ErrorPage from "./Components/ErrorPage";
 import { Route, Routes } from "react-router-dom";
 import React from "react";
-import DrumAcceptancePolicy from "./Components/DrumAcceptancePolicy";
-import PreparingContainers from "./Components/PreparingContainers";
 
 function App() {
   return (
@@ -28,8 +26,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      <PreparingContainers />
-      <DrumAcceptancePolicy />
       <Footer />
     </div>
   );

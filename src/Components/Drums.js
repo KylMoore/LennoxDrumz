@@ -1,7 +1,20 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { LanguageContext } from "./LanguageContext";
+import DrumAcceptancePolicy from "./DrumAcceptancePolicy";
+import PreparingContainers from "./PreparingContainers";
 
 const Drums = () => {
+  const [openPolicy, setOpenPolicy] = useState(false);
+  const [openPreparation, setOpenPreparation] = useState(false);
+
+  const handlePolicyClick = () => {
+    setOpenPolicy(!openPolicy);
+  };
+
+  const handlePreparationClick = () => {
+    setOpenPreparation(!openPreparation);
+  };
+
   const { language } = useContext(LanguageContext);
 
   const content = {
@@ -45,8 +58,24 @@ const Drums = () => {
         </p>
         <p>{content[language].customerOwned}</p>
         <div className="drumSectionButtons">
-          <button>{content[language].drumAcceptancePolicy}</button>
-          <button>{content[language].preparingContainersForTransport}</button>
+          <button
+            className="policyButton"
+            onClick={() => {
+              handlePolicyClick();
+            }}
+          >
+            {content[language].drumAcceptancePolicy}
+            {openPolicy ? <DrumAcceptancePolicy /> : null}
+          </button>
+          <button
+            className="preparationButton"
+            onClick={() => {
+              handlePreparationClick();
+            }}
+          >
+            {content[language].preparingContainersForTransport}
+            {openPreparation ? <PreparingContainers /> : null}
+          </button>
         </div>
       </div>
     </section>

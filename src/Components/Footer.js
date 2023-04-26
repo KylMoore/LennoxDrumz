@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import DrumAcceptancePolicy from "./DrumAcceptancePolicy";
+import PreparingContainers from "./PreparingContainers";
 
 const Footer = () => {
+  const [openPolicy, setOpenPolicy] = useState(false);
+  const [openPreparation, setOpenPreparation] = useState(false);
+
+  const handlePolicyClick = () => {
+    setOpenPolicy(!openPolicy);
+  };
+
+  const handlePreparationClick = () => {
+    setOpenPreparation(!openPreparation);
+  };
+
   return (
     <footer>
       <img src="./assets/Lennox-Drum-Ltd.jpg" alt="Lennox Drum logo" />
@@ -23,10 +36,26 @@ const Footer = () => {
         <div className="footerMiddle">
           <ul>
             <li>
-              <a href="/">Drum Acceptance Policy</a>
+              <button
+                className="policyButton"
+                onClick={() => {
+                  handlePolicyClick();
+                }}
+              >
+                Drum Acceptance Policy
+                {openPolicy ? <DrumAcceptancePolicy /> : null}
+              </button>
             </li>
             <li>
-              <a href="/">Preparing Containers for Transport</a>
+              <button
+                className="preparationButton"
+                onClick={() => {
+                  handlePreparationClick();
+                }}
+              >
+                Preparing Containers for Transport
+                {openPreparation ? <PreparingContainers /> : null}
+              </button>
             </li>
           </ul>
         </div>

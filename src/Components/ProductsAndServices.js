@@ -1,62 +1,133 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "./LanguageContext";
 import { Link } from "react-router-dom";
 
 const ProductsAndServices = () => {
+  const { language } = useContext(LanguageContext);
+
+  const translations = {
+    en: {
+      title: "Products & Services",
+      drums: {
+        title: "Drums",
+        company: "Lennox Drum Limited",
+        items: [
+          "New & reconditioned drums",
+          "Steel & Plastic",
+          "Bung type and Open Head",
+          "Recertification of UN rated Drums",
+        ],
+        link: "Learn more...",
+      },
+      ibcs: {
+        title: "IBC's",
+        company: "Container Services A.R.M.",
+        items: [
+          "New and reconditioned tote tanks",
+          "Steel & Plastic",
+          "275 gallon and 330 gallon",
+          "Recertification of UN rated tote tanks",
+        ],
+        link: "Learn more...",
+      },
+      regrind: {
+        title: "Regrind",
+        company: "Recycled Grindings Inc.",
+        items: [
+          "Recycling of plastic drums into pellets for re-manufacturing",
+          "Shredding of disposable steel containers for re-manufacturing",
+        ],
+        link: "Learn more...",
+      },
+    },
+    fr: {
+      title: "Produits et services",
+      drums: {
+        title: "Fûts",
+        company: "Lennox Drum Limitée",
+        items: [
+          "Fûts neufs et reconditionnés",
+          "Acier et plastique",
+          "Type de bouchon et à tête ouverte",
+          "Recertification des fûts notés UN",
+        ],
+        link: "En savoir plus...",
+      },
+      ibcs: {
+        title: "GRV",
+        company: "Services de conteneurs A.R.M.",
+        items: [
+          "GRV neufs et reconditionnés",
+          "Acier et plastique",
+          "275 gallons et 330 gallons",
+          "Recertification des GRV notés UN",
+        ],
+        link: "En savoir plus...",
+      },
+      regrind: {
+        title: "Recyclage",
+        company: "Recycled Grindings Inc.",
+        items: [
+          "Recyclage de fûts en plastique en granulés pour la remanufacturation",
+          "Déchiquetage de conteneurs en acier jetables pour la remanufacturation",
+        ],
+        link: "En savoir plus...",
+      },
+    },
+  };
+
+  const currentTranslations = translations[language];
+
   return (
     <section className="productsAndServices">
       <div className="wrapper">
-        <h2>Products & Services</h2>
+        <h2>{currentTranslations.title}</h2>
         <div className="product">
-          <h3>Drums</h3>
+          <h3>{currentTranslations.drums.title}</h3>
           <img src="" alt="" />
           <div>
-            <h4>Lennox Drum Limited</h4>
+            <h4>{currentTranslations.drums.company}</h4>
             <ul>
-              <li>New & reconditioned drums</li>
-              <li>Steel & Plastic</li>
-              <li>Bung type and Open Head</li>
-              <li>Recertification of UN rated Drums</li>
+              {currentTranslations.drums.items.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
             <Link to="/drums" aria-label="Navigate to Drums page" title="Drums">
-              Learn more...
+              {currentTranslations.drums.link}
             </Link>
           </div>
         </div>
         <div className="product">
-          <h3>IBC's</h3>
+          <h3>{currentTranslations.ibcs.title}</h3>
           <img src="" alt="" />
           <div>
-            <h4>Container Services A.R.M.</h4>
+            <h4>{currentTranslations.ibcs.company}</h4>
             <ul>
-              <li>New and reconditioned tote tanks</li>
-              <li>Steel & Plastic</li>
-              <li>275 gallon and 330 gallon</li>
-              <li>Recertification of UN rated tote tanks</li>
+              {currentTranslations.ibcs.items.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
             <Link to="/ibcs" aria-label="Navigate to IBC's page" title="IBC's">
-              Learn more...
+              {currentTranslations.ibcs.link}
             </Link>
           </div>
         </div>
         <div className="product">
-          <h3>Regrind</h3>
+          <h3>{currentTranslations.regrind.title}</h3>
           <img src="" alt="" />
           <div>
-            <h4>Recycled Grindings Inc.</h4>
+            <h4>{currentTranslations.regrind.company}</h4>
             <ul>
-              <li>
-                Recycling of plastic drums into pellets for re-manufacturing
-              </li>
-              <li>
-                Shredding of disposable steel containers for re-manufacturing
-              </li>
+              {currentTranslations.regrind.items.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
             <Link
               to="/regrind"
               aria-label="Navigate to regrind page"
               title="Regrind"
             >
-              Learn more...
+              {currentTranslations.regrind.link}
             </Link>
           </div>
         </div>

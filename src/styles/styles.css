@@ -641,53 +641,94 @@ nav .navBar .languageMenu select {
 }
 
 .preparingContainersModal {
-  display: none;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.preparingContainersModal .preparingContainersContent {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FFF8F0;
-  border-radius: 0.5rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  max-width: 60%;
+  min-width: 30%;
+  margin: 5rem auto;
+  padding: 1rem 0.5rem 0;
+  border-radius: 0.25rem;
 }
-.preparingContainersModal h3 {
+.preparingContainersModal .preparingContainersContent h3 {
+  margin: 0 0 1rem 0;
+}
+.preparingContainersModal .preparingContainersContent h4 {
+  font-size: 1rem;
   margin: 0;
 }
-.preparingContainersModal h4 {
-  margin: 0;
+.preparingContainersModal .preparingContainersContent ul {
+  margin: 0 1rem;
+  padding: 0 0 1rem 0;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.preparingContainersModal ul {
-  margin: 0;
+.preparingContainersModal .preparingContainersContent ul li {
+  list-style-type: lower-roman;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.preparingContainersModal .preparingContainersContent ul li p {
+  font-size: 0.75rem;
+  margin: 0.25rem 0;
 }
 
 .policyModal {
-  display: none;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.policyModal .policyModalContent {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FFF8F0;
-  border-radius: 0.5rem;
-  width: -moz-fit-content;
-  width: fit-content;
+  background-color: #ffffff;
+  max-width: 60%;
+  margin: 5rem auto;
+  padding: 1rem 0.5rem 0;
+  border-radius: 0.25rem;
+}
+.policyModal .policyModalContent h3 {
+  margin: 0;
+}
+.policyModal .policyModalContent h4 {
+  margin: 0;
+}
+.policyModal .policyModalContent ul {
+  margin: 0 1rem;
   padding: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  flex-direction: column;
+  align-items: flex-start;
 }
-.policyModal h3 {
-  margin: 0;
+.policyModal .policyModalContent ul li {
+  list-style-type: lower-roman;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
-.policyModal h4 {
-  margin: 0;
-}
-.policyModal ul {
-  margin: 0;
+.policyModal .policyModalContent ul li p {
+  font-size: 0.75rem;
 }
 
 footer {
