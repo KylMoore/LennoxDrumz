@@ -17,10 +17,7 @@ const ContactForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post(
-        "https://formspree.io/f/mayajybz",
-        data
-      );
+      await axios.post("https://formspree.io/f/mayajybz", data);
       setSuccessMessage(
         language === "en"
           ? "Your message was sent successfully!"
