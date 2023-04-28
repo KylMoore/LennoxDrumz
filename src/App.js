@@ -11,22 +11,28 @@ import Contact from "./Components/Contact";
 import ErrorPage from "./Components/ErrorPage";
 import { Route, Routes } from "react-router-dom";
 import React from "react";
+import { LanguageProvider } from "./Components/LanguageContext";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/productsAndServices" element={<ProductsAndServices />} />
-        <Route path="/drums" element={<Drums />} />
-        <Route path="/ibcs" element={<IBCs />} />
-        <Route path="/regrind" element={<Regrind />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-      <Footer />
+      <LanguageProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/productsAndServices"
+            element={<ProductsAndServices />}
+          />
+          <Route path="/drums" element={<Drums />} />
+          <Route path="/ibcs" element={<IBCs />} />
+          <Route path="/regrind" element={<Regrind />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+        <Footer />
+      </LanguageProvider>
     </div>
   );
 }

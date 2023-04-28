@@ -49,11 +49,11 @@ const Drums = () => {
         <h1>{content[language].productsAndServices}</h1>
         <h2>{content[language].drums}</h2>
         <p>
-          <span>{content[language].new}</span>{" "}
+          {content[language].new}
           {content[language].completeLineOfNewDrums}
         </p>
         <p>
-          <span>{content[language].reconditioned}</span>{" "}
+          {content[language].reconditioned}
           {content[language].industrialDrumsReconditioned}
         </p>
         <p>{content[language].customerOwned}</p>

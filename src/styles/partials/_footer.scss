@@ -1,7 +1,8 @@
 @use "./variables" as *;
 
 footer {
-    background-color: #e74e35;
+    background-color: $secondary;
+    
     display: flex;
     flex-direction: column;
     position: relative;
@@ -27,6 +28,7 @@ footer {
             h3 {
                 font-size: 1rem;
                 margin: 0 0 1rem 0;
+                color: $fontSecondary;
             }
 
             ul {
@@ -34,10 +36,12 @@ footer {
                 margin: 0;
 
                 li {
+                    color: $fontSecondary;
                     list-style: none;
                     padding: 0 0 1rem 0;
 
                     p {
+                        color: $fontSecondary;
                         font-size: 0.75rem;
                         margin: 0;
                         padding: 0 0 .25rem 0;
@@ -51,6 +55,7 @@ footer {
             flex-direction: column;
 
             h3 {
+                color: $fontSecondary;
                 font-size: 1rem;
                 margin: 0 0 1rem 0;
             }
@@ -66,6 +71,7 @@ footer {
                     padding: 0 0 .25rem 0;
 
                     a {
+                        color: $fontSecondary;
                         text-decoration: none;
                         font-size: 0.75rem;
                     }
@@ -88,10 +94,11 @@ footer {
             li {
                 list-style: none;
 
-                a {
+                button {
+                    background-color: $secondary;
                     text-decoration: none;
                     font-size: 0.75rem;
-                    
+                    cursor: pointer;
                 }
             }
         }

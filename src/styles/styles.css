@@ -519,7 +519,7 @@ button:hover, button:focus {
 
 nav {
   position: relative;
-  background-color: #e74e35;
+  background-color: #0D2818;
 }
 nav .navBar {
   display: flex;
@@ -551,12 +551,15 @@ nav .navBar .navBarList ul li {
   padding-right: 10px;
 }
 nav .navBar .navBarList ul li div {
-  border-bottom: #e74e35 2px solid;
+  border-bottom: #0D2818 2px solid;
   cursor: pointer;
+  transition: 0.5s;
   position: relative;
+  color: #FFF8F0;
 }
 nav .navBar .navBarList ul li div:hover, nav .navBar .navBarList ul li div:focus {
-  border-bottom: #020202 2px solid;
+  color: #e74e35;
+  border-bottom: #e74e35 2px solid;
 }
 nav .navBar .navBarList ul li div .productsAndServicesDropdown {
   position: absolute;
@@ -573,10 +576,13 @@ nav .navBar .navBarList ul li div .productsAndServicesDropdown li {
 }
 nav .navBar .navBarList ul li a {
   text-decoration: none;
-  border-bottom: #e74e35 2px solid;
+  border-bottom: #0D2818 2px solid;
+  color: #FFF8F0;
+  transition: 0.5s;
 }
 nav .navBar .navBarList ul li a:hover, nav .navBar .navBarList ul li a:focus {
-  border-bottom: #020202 2px solid;
+  color: #e74e35;
+  border-bottom: #e74e35 2px solid;
 }
 nav .navBar .languageMenu {
   position: absolute;
@@ -591,6 +597,7 @@ nav .navBar .languageMenu select {
   border-radius: 0.25rem;
   font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
+  color: #FFF8F0;
   background-color: rgba(4, 71, 28, 0.5);
   margin: 0;
 }
@@ -638,6 +645,90 @@ nav .navBar .languageMenu select {
   background-color: #FFF8F0;
   padding: 1rem;
   border-radius: 0.5rem;
+}
+
+.drumsSection {
+  padding: 1rem 0;
+}
+.drumsSection .wrapper {
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.drumsSection .wrapper h1 {
+  margin: 0 auto;
+}
+.drumsSection .wrapper h2 {
+  margin: 2rem 0 1rem 0;
+}
+.drumsSection .wrapper p {
+  margin: 0.5rem;
+}
+.drumsSection .wrapper .drumSectionButtons {
+  padding: 1rem 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.ibcsSection {
+  padding: 1rem 0;
+}
+.ibcsSection .wrapper {
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.ibcsSection .wrapper h1 {
+  margin: 0 auto;
+}
+.ibcsSection .wrapper h2 {
+  margin: 2rem 0 1rem 0;
+}
+.ibcsSection .wrapper p {
+  margin: 0.5rem;
+}
+.ibcsSection .wrapper .drumSectionButtons {
+  padding: 1rem 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.regrindSection {
+  padding: 1rem 0;
+}
+.regrindSection .wrapper {
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.regrindSection .wrapper h1 {
+  margin: 0 auto;
+}
+.regrindSection .wrapper h2 {
+  margin: 2rem 0 1rem 0;
+}
+.regrindSection .wrapper p {
+  margin: 0.5rem;
+}
+.regrindSection .wrapper .drumSectionButtons {
+  padding: 1rem 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
 }
 
 .preparingContainersModal {
@@ -732,7 +823,7 @@ nav .navBar .languageMenu select {
 }
 
 footer {
-  background-color: #e74e35;
+  background-color: #0D2818;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -757,16 +848,19 @@ footer .footerContent .footerAddress {
 footer .footerContent .footerAddress h3 {
   font-size: 1rem;
   margin: 0 0 1rem 0;
+  color: #FFF8F0;
 }
 footer .footerContent .footerAddress ul {
   padding: 0;
   margin: 0;
 }
 footer .footerContent .footerAddress ul li {
+  color: #FFF8F0;
   list-style: none;
   padding: 0 0 1rem 0;
 }
 footer .footerContent .footerAddress ul li p {
+  color: #FFF8F0;
   font-size: 0.75rem;
   margin: 0;
   padding: 0 0 0.25rem 0;
@@ -776,6 +870,7 @@ footer .footerContent .footerLinks {
   flex-direction: column;
 }
 footer .footerContent .footerLinks h3 {
+  color: #FFF8F0;
   font-size: 1rem;
   margin: 0 0 1rem 0;
 }
@@ -790,6 +885,7 @@ footer .footerContent .footerLinks ul li {
   padding: 0 0 0.25rem 0;
 }
 footer .footerContent .footerLinks ul li a {
+  color: #FFF8F0;
   text-decoration: none;
   font-size: 0.75rem;
 }
@@ -807,9 +903,11 @@ footer .footerMiddle ul {
 footer .footerMiddle ul li {
   list-style: none;
 }
-footer .footerMiddle ul li a {
+footer .footerMiddle ul li button {
+  background-color: #0D2818;
   text-decoration: none;
   font-size: 0.75rem;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {

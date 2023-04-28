@@ -8,11 +8,11 @@ import { LanguageProvider } from "./Components/LanguageContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <LanguageProvider>
+    <LanguageProvider>
+      <BrowserRouter>
         <App />
-      </LanguageProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </LanguageProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

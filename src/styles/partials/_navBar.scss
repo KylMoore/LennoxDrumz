@@ -2,7 +2,7 @@
 
 nav {
     position: relative;
-    background-color: #e74e35;
+    background-color: $secondary;
 
     .navBar {
         display: flex;
@@ -34,13 +34,16 @@ nav {
                     padding-right: 10px;
 
                     div {
-                        border-bottom: #e74e35 2px solid;
+                        border-bottom: $secondary 2px solid;
                         cursor: pointer;
+                        transition: 0.5s;
                         position: relative;
+                        color: $fontSecondary;
 
                         &:hover,
                         &:focus {
-                            border-bottom: $primary 2px solid;
+                            color: $quinary;
+                            border-bottom: $quinary 2px solid;
                         }
 
                         .productsAndServicesDropdown {
@@ -61,11 +64,14 @@ nav {
 
                     a {
                         text-decoration: none;
-                        border-bottom: #e74e35 2px solid;
+                        border-bottom: $secondary 2px solid;
+                        color: $fontSecondary;
+                        transition: 0.5s;
 
                         &:hover,
                         &:focus {
-                            border-bottom: $primary 2px solid;
+                            color: $quinary;
+                            border-bottom: $quinary 2px solid;
                         }
                     }
 
@@ -85,6 +91,7 @@ nav {
                 border-radius: 0.25rem;
                 font-family: $roboto;
                 font-size: 0.75rem;
+                color: $fontSecondary;
                 background-color: rgba($color: $tertiary, $alpha: 0.5);
                 margin: 0;
 
