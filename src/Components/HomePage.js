@@ -4,7 +4,11 @@ const HomePage = () => {
   return (
     <section className="homePage">
       <div className="homePageHeader wrapper">
-        <h1>Lennox Drum Ltd.</h1>
+        {/* <h1>Lennox Drum Ltd.</h1> */}
+        <img
+          src="./assets/Lennox-Drum-Ltd.home.png"
+          alt="Lennox Drum ltd. logo"
+        />
       </div>
     </section>
   );

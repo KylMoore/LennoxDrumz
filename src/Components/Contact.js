@@ -3,9 +3,15 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section className="contactSection">
-      <div className="">
-        <h2>Contact Us</h2>
+    <section className="contactSection wrapper">
+      <div className="contactContent">
+        <div className="contactHeader">
+          <h2>Contact Us</h2>
+          <p>
+            Have a question? Need assistance? Contact us and we'll get back to
+            you
+          </p>
+        </div>
         <ContactForm />
       </div>
     </section>

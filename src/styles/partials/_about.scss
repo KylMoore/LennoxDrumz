@@ -1,0 +1,64 @@
+@use "./variables" as *;
+
+.aboutSection {
+    padding: 1rem 0;
+
+    .aboutPageHeader {
+        
+        h1 {
+            margin: 0 0 2rem 0;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 0 0 1rem 0;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+    }
+
+    .wrapper {
+        background-color: white;
+        border-radius: .25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.5rem;
+    }
+    
+    .accordion {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+
+        h3 {
+            margin: 0;
+        }
+
+        button{
+            background-color: white;
+            border-radius: 50rem;
+            
+            svg {
+                cursor: pointer;
+                fill: black;
+                height: 1rem;
+                transition: .5s;
+                
+                &:hover, &:focus {
+                    fill: orangered;
+                }
+            }
+        }
+    }
+
+    .accordionContent {
+        display: none;
+    }
+
+    .accordionContent.active {
+        display: block;
+    }
+}
