@@ -533,7 +533,7 @@ nav .navBar {
 }
 nav .navBar .logo {
   position: absolute;
-  left: 0;
+  left: 3rem;
   height: 3rem;
   transform: translate(0%, 5%);
 }
@@ -568,7 +568,6 @@ nav .navBar .navBarList ul li div .productsAndServicesDropdown {
   flex-direction: column;
   top: 2rem;
   padding: 0 3rem;
-  color: #e74e35;
   background-color: #CCB278;
   border-radius: 0.25rem;
 }
@@ -664,7 +663,7 @@ nav .navBar .languageMenu select {
   padding: 1rem 0;
 }
 .drumsSection .wrapper {
-  background-color: white;
+  background-color: rgba(255, 248, 240, 0.75);
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -692,7 +691,7 @@ nav .navBar .languageMenu select {
   align-items: center;
 }
 .drumsSection .wrapper .drumsSectionContent {
-  background-color: #9E9E96;
+  background-color: rgba(158, 158, 150, 0.5);
   border-radius: 0.25rem;
 }
 .drumsSection .wrapper .drumSectionButtons {
@@ -711,7 +710,7 @@ nav .navBar .languageMenu select {
   padding: 1rem 0;
 }
 .ibcsSection .wrapper {
-  background-color: white;
+  background-color: rgba(255, 248, 240, 0.75);
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -739,7 +738,7 @@ nav .navBar .languageMenu select {
   align-items: center;
 }
 .ibcsSection .wrapper .ibcsSectionContent {
-  background-color: #9E9E96;
+  background-color: rgba(158, 158, 150, 0.5);
   border-radius: 0.25rem;
 }
 
@@ -747,7 +746,7 @@ nav .navBar .languageMenu select {
   padding: 1rem 0;
 }
 .regrindSection .wrapper {
-  background-color: white;
+  background-color: rgba(255, 248, 240, 0.75);
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -775,7 +774,7 @@ nav .navBar .languageMenu select {
   align-items: center;
 }
 .regrindSection .wrapper .regrindSectionContent {
-  background-color: #9E9E96;
+  background-color: rgba(158, 158, 150, 0.5);
   border-radius: 0.25rem;
 }
 
@@ -816,7 +815,7 @@ nav .navBar .languageMenu select {
   font-size: 0.75rem;
 }
 .aboutSection .wrapper {
-  background-color: white;
+  background-color: rgba(255, 248, 240, 0.75);
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -830,12 +829,20 @@ nav .navBar .languageMenu select {
   margin: 0.25rem 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.aboutSection .accordion:hover h3, .aboutSection .accordion:focus h3 {
+  color: #5E754D;
+}
+.aboutSection .accordion:hover svg, .aboutSection .accordion:focus svg {
+  fill: #5E754D;
 }
 .aboutSection .accordion h3 {
   margin: 0;
+  transition: 0.5s;
 }
 .aboutSection .accordion button {
-  background-color: white;
+  background-color: rgba(255, 248, 240, 0);
   border-radius: 50rem;
   display: flex;
   align-items: center;
@@ -847,9 +854,6 @@ nav .navBar .languageMenu select {
   height: 1rem;
   transition: 0.5s;
 }
-.aboutSection .accordion button svg:hover, .aboutSection .accordion button svg:focus {
-  fill: #E3B8AF;
-}
 .aboutSection .accordionContent {
   display: none;
 }
@@ -857,7 +861,7 @@ nav .navBar .languageMenu select {
   display: block;
 }
 .aboutSection p {
-  background-color: #9E9E96;
+  background-color: rgba(158, 158, 150, 0.5);
   padding: 1rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;
@@ -873,7 +877,7 @@ nav .navBar .languageMenu select {
   align-items: center;
 }
 .productsAndServices .product {
-  background-color: white;
+  background-color: rgba(255, 248, 240, 0.75);
   border-radius: 0.25rem;
   padding: 1rem;
   margin: 1rem 0;
@@ -901,7 +905,7 @@ nav .navBar .languageMenu select {
 }
 
 .contactSection {
-  background-color: white;
+  background-color: rgba(255, 248, 240, 0.75);
   border-radius: 0.25rem;
   padding: 1.5rem;
 }

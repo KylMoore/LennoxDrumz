@@ -47,7 +47,7 @@
     }
 
     .wrapper {
-        background-color: white;
+        background-color: rgba($fontSecondary, $alpha: .75);
         border-radius: .25rem;
         display: flex;
         flex-direction: column;
@@ -62,41 +62,52 @@
         margin: .25rem 0;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
+        cursor: pointer;
 
+        &:hover,
+        &:focus {
+            
+            h3 {
+                color: $tertiary;
+            }
+
+            svg {
+                fill: $tertiary;
+            }
+        }
+        
         h3 {
             margin: 0;
+            transition: .5s;
         }
 
         button{
-            background-color: white;
+            background-color: rgba($fontSecondary, $alpha: 0);
             border-radius: 50rem;
             display: flex;
             align-items: center;
             justify-content: center;
-
+            
             svg {
                 cursor: pointer;
                 fill: black;
                 height: 1rem;
                 transition: .5s;
-                
-                &:hover, &:focus {
-                    fill: $senary;
-                }
             }
         }
     }
-
+    
     .accordionContent {
         display: none;
     }
-
+    
     .accordionContent.active {
         display: block;
+        
     }
 
     p {
-        background-color: $quaternary;
+        background-color: rgba($quaternary, $alpha: 0.5);
         padding: 1rem;
         border-radius: .25rem;
         font-size: .75rem;

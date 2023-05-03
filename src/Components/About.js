@@ -30,9 +30,12 @@ const About = () => {
           <img src="./assets/old-drum.jpg" alt="an industrial barrel" />
         </div>
         <div className="aboutContent">
-          <div className={`accordion ${accordion1Active ? "active" : ""}`}>
+          <div
+            onClick={toggle1Accordion}
+            className={`accordion ${accordion1Active ? "active" : ""}`}
+          >
             <h3>Who are we?</h3>
-            <button onClick={toggle1Accordion}>
+            <button>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
               </svg>
@@ -47,7 +50,10 @@ const About = () => {
             years.
           </p>
 
-          <div className={`accordion ${accordion2Active ? "active" : ""}`}>
+          <div
+            onClick={toggle2Accordion}
+            className={`accordion ${accordion2Active ? "active" : ""}`}
+          >
             <h3 className="borderTop">What we do</h3>
             <button onClick={toggle2Accordion}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -65,7 +71,10 @@ const About = () => {
             capable of processing up to 500 drums per hour.
           </p>
 
-          <div className={`accordion ${accordion3Active ? "active" : ""}`}>
+          <div
+            onClick={toggle3Accordion}
+            className={`accordion ${accordion3Active ? "active" : ""}`}
+          >
             <h3 className="borderTop">Our goal</h3>
             <button onClick={toggle3Accordion}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

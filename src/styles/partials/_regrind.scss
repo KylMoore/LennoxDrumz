@@ -4,7 +4,7 @@
     padding: 1rem 0;
 
     .wrapper {
-        background-color: white;
+        background-color: rgba($fontSecondary, $alpha: .75);
         border-radius: .25rem;
         display: flex;
         flex-direction: column;
@@ -37,7 +37,7 @@
         }
 
         .regrindSectionContent {
-            background-color: $quaternary;
+            background-color: rgba($quaternary, $alpha: 0.5);
             border-radius: .25rem;
         }
     }

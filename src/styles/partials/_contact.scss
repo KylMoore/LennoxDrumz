@@ -1,7 +1,7 @@
 @use "./variables" as *;
 
 .contactSection {
-    background-color: white;
+    background-color: rgba($fontSecondary, $alpha: .75);
     border-radius: 0.25rem;
     padding: 1.5rem;
 

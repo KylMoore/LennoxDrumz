@@ -3,6 +3,7 @@
 nav {
     position: relative;
     background-color: $secondary;
+    
 
     .navBar {
         display: flex;
@@ -13,7 +14,7 @@ nav {
     
         .logo {
             position: absolute;
-            left: 0;
+            left: 3rem;
             height: 3rem;
             transform: translate(0%, 5%);
         }
@@ -51,7 +52,6 @@ nav {
                             flex-direction: column;
                             top: 2rem;
                             padding: 0 3rem;
-                            color: #e74e35;
                             background-color: $quinary;
                             border-radius: .25rem;
 
