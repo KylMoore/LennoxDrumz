@@ -25,57 +25,65 @@ const About = () => {
   const englishContent = (
     <>
       <h2>A little bit about us.</h2>
-      <div className={`accordion ${accordion1Active ? "active" : ""}`}>
-        <h3>Who are we?</h3>
-        <button onClick={toggle1Accordion}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
-          </svg>
-        </button>
+      <div className="aboutContainer">
+        <div className="aboutImageContainer">
+          <img src="./assets/old-drum.jpg" alt="an industrial barrel" />
+        </div>
+        <div className="aboutContent">
+          <div className={`accordion ${accordion1Active ? "active" : ""}`}>
+            <h3>Who are we?</h3>
+            <button onClick={toggle1Accordion}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+              </svg>
+            </button>
+          </div>
+
+          <p className={`accordionContent ${accordion1Active ? "active" : ""}`}>
+            We are located in Ajax, Ontario, Canada, and specialize in providing
+            steel drum reconditioning, recycling, and waste management services
+            to various industries. The company was founded in 1953 by Jim
+            Lennox, and it has been serving the Ontario region for more than 60
+            years.
+          </p>
+
+          <div className={`accordion ${accordion2Active ? "active" : ""}`}>
+            <h3 className="borderTop">What we do</h3>
+            <button onClick={toggle2Accordion}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+              </svg>
+            </button>
+          </div>
+
+          <p className={`accordionContent ${accordion2Active ? "active" : ""}`}>
+            We offer a range of products and services, including the collection
+            of used drums, the reconditioning of drums to meet industry
+            standards, and the supply of new and reconditioned drums. The
+            company has an extensive fleet of trucks that transport the drums,
+            and it operates a fully-automated reconditioning plant that is
+            capable of processing up to 500 drums per hour.
+          </p>
+
+          <div className={`accordion ${accordion3Active ? "active" : ""}`}>
+            <h3 className="borderTop">Our goal</h3>
+            <button onClick={toggle3Accordion}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+              </svg>
+            </button>
+          </div>
+
+          <p className={`accordionContent ${accordion3Active ? "active" : ""}`}>
+            In addition to drum reconditioning and recycling, we also provide a
+            range of waste management services, including the removal and
+            disposal of hazardous waste materials. The company is committed to
+            environmental sustainability and is licensed by the Ministry of
+            Environment, Conservation and Parks to operate a hazardous waste
+            storage and transfer facility.
+          </p>
+        </div>
       </div>
-
-      <p className={`accordionContent ${accordion1Active ? "active" : ""}`}>
-        We are located in Ajax, Ontario, Canada, and specialize in providing
-        steel drum reconditioning, recycling, and waste management services to
-        various industries. The company was founded in 1953 by Jim Lennox, and
-        it has been serving the Ontario region for more than 60 years.
-      </p>
-
-      <div className={`accordion ${accordion2Active ? "active" : ""}`}>
-        <h3>What we do</h3>
-        <button onClick={toggle2Accordion}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
-          </svg>
-        </button>
-      </div>
-
-      <p className={`accordionContent ${accordion2Active ? "active" : ""}`}>
-        We offer a range of products and services, including the collection of
-        used drums, the reconditioning of drums to meet industry standards, and
-        the supply of new and reconditioned drums. The company has an extensive
-        fleet of trucks that transport the drums, and it operates a
-        fully-automated reconditioning plant that is capable of processing up to
-        500 drums per hour.
-      </p>
-
-      <div className={`accordion ${accordion3Active ? "active" : ""}`}>
-        <h3>Our goal</h3>
-        <button onClick={toggle3Accordion}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
-          </svg>
-        </button>
-      </div>
-
-      <p className={`accordionContent ${accordion3Active ? "active" : ""}`}>
-        In addition to drum reconditioning and recycling, we also provide a
-        range of waste management services, including the removal and disposal
-        of hazardous waste materials. The company is committed to environmental
-        sustainability and is licensed by the Ministry of Environment,
-        Conservation and Parks to operate a hazardous waste storage and transfer
-        facility.
-      </p>
       <p>
         We have built a reputation as a reliable and environmentally responsible
         provider of drum reconditioning and waste management services, and have
@@ -106,7 +114,7 @@ const About = () => {
         région de l'Ontario depuis plus de 60 ans.
       </p>
       <div className={`accordion ${accordion2Active ? "active" : ""}`}>
-        <h3>Ce que nous faisons</h3>
+        <h3 className="borderTop">Ce que nous faisons</h3>
         <button onClick={toggle2Accordion}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
@@ -123,7 +131,7 @@ const About = () => {
         tambours par heure.
       </p>
       <div className={`accordion ${accordion3Active ? "active" : ""}`}>
-        <h3>Notre objectif</h3>
+        <h3 className="borderTop">Notre objectif</h3>
         <button onClick={toggle3Accordion}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />

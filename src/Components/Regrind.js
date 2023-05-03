@@ -32,10 +32,15 @@ const Regrind = () => {
     <section className="regrindSection">
       <div className="wrapper">
         <h1>{text.title}</h1>
-        <h2>{text.subtitle}</h2>
-        <p>{text.firstParagraph}</p>
-        <p>{text.secondParagraph}</p>
-        <p>{text.thirdParagraph}</p>
+        <div className="regrindSectionHeader">
+          <h2>{text.subtitle}</h2>
+          <img src="./assets/old-drums.jpg" alt="regrind" />
+        </div>
+        <div className="regrindSectionContent">
+          <p>{text.firstParagraph}</p>
+          <p>{text.secondParagraph}</p>
+          <p>{text.thirdParagraph}</p>
+        </div>
       </div>
     </section>
   );

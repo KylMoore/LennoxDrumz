@@ -84,7 +84,7 @@ const ProductsAndServices = () => {
         <h2>{currentTranslations.title}</h2>
         <div className="product">
           <h3>{currentTranslations.drums.title}</h3>
-          <img src="" alt="" />
+          <img src="./assets/old-drums.jpg" alt="" />
           <div>
             <h4>{currentTranslations.drums.company}</h4>
             <ul>
@@ -99,7 +99,7 @@ const ProductsAndServices = () => {
         </div>
         <div className="product">
           <h3>{currentTranslations.ibcs.title}</h3>
-          <img src="" alt="" />
+          <img src="./assets/old-drums.jpg" alt="" />
           <div>
             <h4>{currentTranslations.ibcs.company}</h4>
             <ul>
@@ -114,7 +114,7 @@ const ProductsAndServices = () => {
         </div>
         <div className="product">
           <h3>{currentTranslations.regrind.title}</h3>
-          <img src="" alt="" />
+          <img src="./assets/old-drums.jpg" alt="" />
           <div>
             <h4>{currentTranslations.regrind.company}</h4>
             <ul>

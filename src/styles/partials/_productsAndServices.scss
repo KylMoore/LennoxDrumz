@@ -1,0 +1,47 @@
+@use "./variables" as *;
+
+.productsAndServices {
+
+    h2 {
+        align-self: flex-start;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product {
+        background-color: white;
+        border-radius: .25rem;
+        padding: 1rem;
+        margin: 1rem 0;
+        min-width: 60%;
+        max-width: 60%;
+        position: relative;
+
+        h3 {
+            margin: 0;
+        }
+
+        h4 {
+            margin: .25rem 0 0 0;
+        }
+
+        ul {
+            width: 75%;
+            padding: 0 0 0 1rem;
+        }
+
+        img {
+            height: 5rem;
+            width: 5rem;
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translate(-5%, -50%);
+        }
+    }
+}

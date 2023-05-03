@@ -18,17 +18,27 @@
         h2 {
             margin: 2rem 0 1rem 0;
         }
+        
+        img {
+            height: 5rem;
+            width: 5rem;
+            border-radius: .25rem;
+        }
 
         p {
             margin: .5rem;
         }
 
-        .drumSectionButtons {
-            padding: 1rem 0 0 0;
+        .ibcsSectionHeader {
             display: flex;
-            justify-content: space-evenly;
+            margin: 1rem 0;
+            justify-content: space-between;
             align-items: center;
-            align-content: center;
+        }
+
+        .ibcsSectionContent {
+            background-color: $quaternary;
+            border-radius: .25rem;
         }
     }
 }

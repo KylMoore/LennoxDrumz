@@ -5,8 +5,7 @@ html {
 }
 
 body {
-    background-image: url("/public/assets/old-drum.jpg");
-    // background-image: url("/public/assets/Lennox-Drum-Ltd.home.png");
+    background-image: url("/public/assets/grass.jpg");
     background-repeat: no-repeat;
     background-size: center;
     background-position: center;
@@ -79,10 +78,11 @@ button {
     background-color: $secondary;
     color: $fontSecondary;
     padding: 0.5rem 1rem;
-    transition: 0.3s;
+    transition: 0.5s;
 
     &:hover, &:focus {
         background-color: $tertiary;
+        color: $primary;
     }
 }
 
