@@ -671,7 +671,8 @@ nav .navBar .languageMenu select {
   padding: 1.5rem;
 }
 .drumsSection .wrapper h1 {
-  margin: 0 auto;
+  margin: 0;
+  border-bottom: 1px solid black;
 }
 .drumsSection .wrapper h2 {
   margin: 0;
@@ -686,7 +687,7 @@ nav .navBar .languageMenu select {
 }
 .drumsSection .wrapper .drumsSectionHeader {
   display: flex;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   justify-content: space-between;
   align-items: center;
 }
@@ -718,7 +719,8 @@ nav .navBar .languageMenu select {
   padding: 1.5rem;
 }
 .ibcsSection .wrapper h1 {
-  margin: 0 auto;
+  margin: 0;
+  border-bottom: 1px solid black;
 }
 .ibcsSection .wrapper h2 {
   margin: 2rem 0 1rem 0;
@@ -733,7 +735,7 @@ nav .navBar .languageMenu select {
 }
 .ibcsSection .wrapper .ibcsSectionHeader {
   display: flex;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   justify-content: space-between;
   align-items: center;
 }
@@ -754,7 +756,8 @@ nav .navBar .languageMenu select {
   padding: 1.5rem;
 }
 .regrindSection .wrapper h1 {
-  margin: 0 auto;
+  margin: 0;
+  border-bottom: 1px solid black;
 }
 .regrindSection .wrapper h2 {
   margin: 2rem 0 1rem 0;
@@ -769,7 +772,7 @@ nav .navBar .languageMenu select {
 }
 .regrindSection .wrapper .regrindSectionHeader {
   display: flex;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   justify-content: space-between;
   align-items: center;
 }
@@ -783,6 +786,7 @@ nav .navBar .languageMenu select {
 }
 .aboutSection .aboutPageHeader h1 {
   margin: 0 0 2rem 0;
+  border-bottom: 1px solid black;
 }
 .aboutSection .aboutPageHeader h2 {
   font-size: 1.5rem;
@@ -803,6 +807,7 @@ nav .navBar .languageMenu select {
 .aboutSection .aboutPageHeader .aboutContainer .aboutImageContainer img {
   height: 15em;
   width: 15rem;
+  border-radius: 0.25rem;
 }
 .aboutSection .aboutPageHeader .aboutContainer .aboutContent {
   display: flex;
@@ -868,7 +873,7 @@ nav .navBar .languageMenu select {
 }
 
 .productsAndServices h2 {
-  align-self: flex-start;
+  align-self: center;
 }
 .productsAndServices .wrapper {
   display: flex;
