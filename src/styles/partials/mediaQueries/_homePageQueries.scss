@@ -1,0 +1,32 @@
+@use "../variables" as *;
+
+@media (max-width: 900px) {
+    .homePage {
+        
+        .wrapper {
+            margin: 0 auto;
+        }
+        
+        .homePageHeader {
+            img {
+                width: 75%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .homePage {
+        
+        .wrapper {
+            margin: 0 auto;
+        }
+
+        .homePageHeader {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

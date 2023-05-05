@@ -1,0 +1,32 @@
+@use "../variables" as *;
+
+@media (max-width: 700px) {
+
+    nav {
+
+        .navBar {
+            height: 4rem;
+
+            .logo {
+                left: auto;
+                top: .5rem;
+
+                // transform: translate(50%, 50%);
+            }
+
+            .navBarList {
+
+                ul {
+
+                    li {
+                        display: none;
+                    }
+                }
+            }
+
+            .languageMenu {
+                right: -1rem;
+            }
+        }
+    }
+}

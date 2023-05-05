@@ -1,0 +1,81 @@
+@use "../variables" as *;
+
+@media (max-width: 930px) {
+
+    footer {
+        justify-content: flex-end;
+
+        img {
+            top: 40%;
+        }
+        
+        .footerAddress {
+            
+            ul {
+                
+                li {
+                    padding: 0;
+                    
+                    span {
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+
+        .footerMiddle {
+    
+            ul {
+                justify-content: flex-end;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+
+    footer {
+
+        img {
+            top: 20%;
+            height: 2.5rem;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+        }
+
+        .footerContent {
+
+            .footerMiddle {
+    
+                ul {
+    
+                    li {
+    
+                        button {
+                            font-size: .75rem;
+            
+                        }
+                    }
+                }
+            }
+            
+            .footerAddress {
+    
+                ul {
+    
+                    li {
+                        padding: 0;
+    
+                        span {
+                            font-size: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

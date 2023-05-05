@@ -17,3 +17,6 @@
 @use "./partials/footer" as *;
 
 @use "./partials/mediaQueries/hamburgerQuery" as *;
+@use "./partials/mediaQueries/navBarList" as *;
+@use "./partials/mediaQueries/homePageQueries" as *;
+@use "./partials/mediaQueries/footerQueries" as *;

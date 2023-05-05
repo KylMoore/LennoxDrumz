@@ -1099,6 +1099,10 @@ footer .footerContent .footerLinks ul li a {
   color: #FFF8F0;
   text-decoration: none;
   font-size: 0.75rem;
+  transition: 0.5s;
+}
+footer .footerContent .footerLinks ul li a:hover, footer .footerContent .footerLinks ul li a:focus {
+  color: black;
 }
 footer .footerMiddle {
   display: flex;
@@ -1127,5 +1131,73 @@ footer .footerMiddle ul li button {
     position: fixed;
     left: 1rem;
     top: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  nav .navBar {
+    height: 4rem;
+  }
+  nav .navBar .logo {
+    left: auto;
+    top: 0.5rem;
+  }
+  nav .navBar .navBarList ul li {
+    display: none;
+  }
+  nav .navBar .languageMenu {
+    right: -1rem;
+  }
+}
+@media (max-width: 900px) {
+  .homePage .wrapper {
+    margin: 0 auto;
+  }
+  .homePage .homePageHeader img {
+    width: 75%;
+  }
+}
+@media (max-width: 700px) {
+  .homePage .wrapper {
+    margin: 0 auto;
+  }
+  .homePage .homePageHeader img {
+    width: 100%;
+  }
+}
+@media (max-width: 930px) {
+  footer {
+    justify-content: flex-end;
+  }
+  footer img {
+    top: 40%;
+  }
+  footer .footerAddress ul li {
+    padding: 0;
+  }
+  footer .footerAddress ul li span {
+    font-size: 0.75rem;
+  }
+  footer .footerMiddle ul {
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  footer img {
+    top: 20%;
+    height: 2.5rem;
+  }
+  footer .wrapper {
+    margin: 0 auto;
+  }
+  footer .footerContent .footerMiddle ul li button {
+    font-size: 0.75rem;
+  }
+  footer .footerContent .footerAddress ul li {
+    padding: 0;
+  }
+  footer .footerContent .footerAddress ul li span {
+    font-size: 0.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
