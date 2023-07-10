@@ -6,19 +6,22 @@
     margin-bottom: 5rem;
 
     .aboutPageHeader {
-        
+
         h1 {
             margin: 0 0 2rem 0;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid white;
+            color: $fontSecondary;
         }
 
         h2 {
             font-size: 1.5rem;
             margin: 0 0 1rem 0;
+            color: $fontSecondary;
         }
 
         h3 {
             font-size: 1rem;
+            color: $fontSecondary;
         }
 
         .aboutContainer {
@@ -51,7 +54,7 @@
     }
 
     .wrapper {
-        background-color: rgba($fontSecondary, $alpha: .75);
+        background-color: rgba($tertiary, $alpha: .75);
         border-radius: .25rem;
         display: flex;
         flex-direction: column;
@@ -64,19 +67,20 @@
         justify-content: space-between;
         align-items: center;
         margin: .25rem 0;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
         cursor: pointer;
 
+        
         &:hover,
         &:focus {
             
             h3 {
-                color: $tertiary;
+                color: $fontSecondary;
             }
-
+            
             svg {
-                fill: $tertiary;
+                fill: $quaternary;
             }
         }
         
@@ -94,7 +98,7 @@
             
             svg {
                 cursor: pointer;
-                fill: black;
+                fill: $fontSecondary;
                 height: 1rem;
                 transition: .5s;
             }
@@ -111,7 +115,7 @@
     }
 
     p {
-        background-color: rgba($tertiary, $alpha: 0.75);
+        background-color: rgba($quaternary, $alpha: 0.5);
         color: $fontSecondary;
         padding: 1rem;
         border-radius: .25rem;

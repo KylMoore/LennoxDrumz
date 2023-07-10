@@ -1,9 +1,15 @@
 @use "./variables" as *;
 
 .productsAndServices {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 
     h2 {
         align-self: center;
+        color: $fontSecondary;
+        background-color: rgba($tertiary, $alpha: .9);
+        border-radius: .25rem;
+        padding: .5rem;
     }
 
     .wrapper {
@@ -14,7 +20,8 @@
     }
 
     .product {
-        background-color: rgba($fontSecondary, $alpha: .75);
+        background-color: rgba($tertiary, $alpha: .9);
+        color: $fontSecondary;
         border-radius: .25rem;
         padding: 1rem;
         margin: 1rem 0;
@@ -24,15 +31,25 @@
 
         h3 {
             margin: 0;
+            color: $fontSecondary;
         }
 
         h4 {
             margin: .25rem 0 0 0;
+            color: $fontSecondary;
         }
 
         ul {
             width: 75%;
             padding: 0 0 0 1rem;
+            
+            li {
+                color: $fontSecondary;
+
+            }
+        }
+        a {
+            color: $fontSecondary;
         }
 
         img {

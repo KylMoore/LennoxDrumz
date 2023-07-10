@@ -1,21 +1,23 @@
 @use "./variables" as *;
 
 .homePage {
-    margin-top: 12.5rem;
-    margin-bottom: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 7.5rem;
     
     .homePageHeader {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
-        align-content: flex-start;
+        align-items: center;
+        height: 50vh;
         padding: 1rem;
         border-radius: 0.5rem;
 
         img {
-            width: 25%;
+        
             border-radius: .25rem;
-            opacity: .75;
+            opacity: .9;
+        max-width: 100%;
+        max-height: 100%;
         }
     }
 }

@@ -428,7 +428,7 @@ html {
 
 body {
   background-image: url("/public/assets/FlyOverBW.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: center;
   background-position: center;
 }
@@ -525,6 +525,7 @@ nav {
   opacity: 0.75;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 nav .navBar {
   display: flex;
@@ -537,8 +538,8 @@ nav .navBar {
 nav .navBar .logo {
   position: absolute;
   left: 3rem;
-  height: 3rem;
-  transform: translate(0%, 5%);
+  height: 2.5rem;
+  transform: translate(0%, 15%);
 }
 nav .navBar .navBarList {
   display: flex;
@@ -650,21 +651,22 @@ nav .navBar .languageMenu select {
 }
 
 .homePage {
-  margin-top: 12.5rem;
-  margin-bottom: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 7.5rem;
 }
 .homePage .homePageHeader {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
+  align-items: center;
+  height: 50vh;
   padding: 1rem;
   border-radius: 0.5rem;
 }
 .homePage .homePageHeader img {
-  width: 25%;
   border-radius: 0.25rem;
-  opacity: 0.75;
+  opacity: 0.9;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .drumsSection {
@@ -796,14 +798,17 @@ nav .navBar .languageMenu select {
 }
 .aboutSection .aboutPageHeader h1 {
   margin: 0 0 2rem 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
+  color: #FFFfff;
 }
 .aboutSection .aboutPageHeader h2 {
   font-size: 1.5rem;
   margin: 0 0 1rem 0;
+  color: #FFFfff;
 }
 .aboutSection .aboutPageHeader h3 {
   font-size: 1rem;
+  color: #FFFfff;
 }
 .aboutSection .aboutPageHeader .aboutContainer {
   display: flex;
@@ -830,7 +835,7 @@ nav .navBar .languageMenu select {
   font-size: 0.75rem;
 }
 .aboutSection .wrapper {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(16, 39, 122, 0.75);
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -842,15 +847,15 @@ nav .navBar .languageMenu select {
   justify-content: space-between;
   align-items: center;
   margin: 0.25rem 0;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   cursor: pointer;
 }
 .aboutSection .accordion:hover h3, .aboutSection .accordion:focus h3 {
-  color: #10277a;
+  color: #FFFfff;
 }
 .aboutSection .accordion:hover svg, .aboutSection .accordion:focus svg {
-  fill: #10277a;
+  fill: #ff2e1d;
 }
 .aboutSection .accordion h3 {
   margin: 0;
@@ -865,7 +870,7 @@ nav .navBar .languageMenu select {
 }
 .aboutSection .accordion button svg {
   cursor: pointer;
-  fill: black;
+  fill: #FFFfff;
   height: 1rem;
   transition: 0.5s;
 }
@@ -876,15 +881,23 @@ nav .navBar .languageMenu select {
   display: block;
 }
 .aboutSection p {
-  background-color: rgba(16, 39, 122, 0.75);
+  background-color: rgba(255, 46, 29, 0.5);
   color: #FFFfff;
   padding: 1rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;
 }
 
+.productsAndServices {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
 .productsAndServices h2 {
   align-self: center;
+  color: #FFFfff;
+  background-color: rgba(16, 39, 122, 0.9);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
 }
 .productsAndServices .wrapper {
   display: flex;
@@ -893,7 +906,8 @@ nav .navBar .languageMenu select {
   align-items: center;
 }
 .productsAndServices .product {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(16, 39, 122, 0.9);
+  color: #FFFfff;
   border-radius: 0.25rem;
   padding: 1rem;
   margin: 1rem 0;
@@ -903,13 +917,21 @@ nav .navBar .languageMenu select {
 }
 .productsAndServices .product h3 {
   margin: 0;
+  color: #FFFfff;
 }
 .productsAndServices .product h4 {
   margin: 0.25rem 0 0 0;
+  color: #FFFfff;
 }
 .productsAndServices .product ul {
   width: 75%;
   padding: 0 0 0 1rem;
+}
+.productsAndServices .product ul li {
+  color: #FFFfff;
+}
+.productsAndServices .product a {
+  color: #FFFfff;
 }
 .productsAndServices .product img {
   height: 5rem;
