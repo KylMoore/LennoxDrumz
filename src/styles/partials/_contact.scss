@@ -1,9 +1,11 @@
 @use "./variables" as *;
 
 .contactSection {
-    background-color: rgba($fontSecondary, $alpha: .75);
+    background-color: rgba($tertiary, $alpha: .75);
     border-radius: 0.25rem;
     padding: 1.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 
     .contactContent {
         display: flex;
@@ -16,6 +18,11 @@
 
             h2 {
                 margin: 2rem 0 1rem 0;
+                color: $fontSecondary;
+            }
+
+            p {
+                color: $fontSecondary;
             }
         }
 
@@ -23,6 +30,7 @@
             display: flex;
             flex-direction: column;
             width: 62.5%;
+            color: $fontSecondary;
 
             input {
                 margin: .5rem 0;

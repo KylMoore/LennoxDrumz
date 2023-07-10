@@ -2,6 +2,8 @@
 
 .aboutSection {
     padding: 1rem 0;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 
     .aboutPageHeader {
         
@@ -109,7 +111,8 @@
     }
 
     p {
-        background-color: rgba($quaternary, $alpha: 0.5);
+        background-color: rgba($tertiary, $alpha: 0.75);
+        color: $fontSecondary;
         padding: 1rem;
         border-radius: .25rem;
         font-size: .75rem;

@@ -1,8 +1,11 @@
 @use "./variables" as *;
 
 nav {
-    position: relative;
+    position: fixed;
     background-color: $secondary;
+    opacity: .75;
+    left: 0;
+    right: 0;
     
 
     .navBar {
@@ -39,11 +42,11 @@ nav {
                         cursor: pointer;
                         transition: 0.5s;
                         position: relative;
-                        color: $fontSecondary;
+                        color: $tertiary;
 
                         &:hover,
                         &:focus {
-                            color: $quinary;
+                            color: $tertiary;
                             border-bottom: $quinary 2px solid;
                         }
 
@@ -60,13 +63,13 @@ nav {
                                 background-color: $quinary;
 
                                 a {
-                                    color: $fontPrimary;
+                                    color: $tertiary;
                                     border-bottom: 2px solid $quinary;
                                     transition: .5s;
 
                                     &:hover,
                                     &:focus {
-                                        border-bottom: $fontPrimary 2px solid;
+                                        border-bottom: $tertiary 2px solid;
                                     }
                                 }
                             }
@@ -76,12 +79,12 @@ nav {
                     a {
                         text-decoration: none;
                         border-bottom: $secondary 2px solid;
-                        color: $fontSecondary;
+                        color: $tertiary;
                         transition: 0.5s;
 
                         &:hover,
                         &:focus {
-                            color: $quinary;
+                            color: $tertiary;
                             border-bottom: $quinary 2px solid;
                         }
                     }
@@ -103,7 +106,7 @@ nav {
                 font-family: $roboto;
                 font-size: 0.75rem;
                 color: $fontSecondary;
-                background-color: rgba($color: $tertiary, $alpha: 0.5);
+                background-color: rgba($color: $tertiary, $alpha: 1);
                 margin: 0;
 
                 option {

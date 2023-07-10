@@ -47,7 +47,7 @@ const About = () => {
             steel drum reconditioning, recycling, and waste management services
             to various industries. The company was founded in 1953 by Jim
             Lennox, and it has been serving the Ontario region for more than 60
-            years.
+            years!
           </p>
 
           <div

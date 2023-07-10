@@ -151,7 +151,7 @@ const NavBar = () => {
     <nav>
       <div className="navBar">
         <img
-          src="./assets/Lennox-Drum-Ltd-green2.jpg"
+          src="./assets/Lennox-Logo.jpg"
           alt="Lennox Drum logo"
           className="logo"
         />
