@@ -2,8 +2,8 @@
 
 nav {
     position: fixed;
-    background-color: $secondary;
-    opacity: .75;
+    background-color: $fontSecondary;
+    opacity: .9;
     left: 0;
     right: 0;
     z-index: 10;
@@ -42,12 +42,11 @@ nav {
                         cursor: pointer;
                         transition: 0.5s;
                         position: relative;
-                        color: $tertiary;
+                        color: $fontPrimary;
 
                         &:hover,
                         &:focus {
-                            color: $tertiary;
-                            border-bottom: $quinary 2px solid;
+                            border-bottom: $tertiary 2px solid;
                         }
 
                         .productsAndServicesDropdown {
@@ -55,21 +54,22 @@ nav {
                             flex-direction: column;
                             top: 2rem;
                             padding: 0 3rem;
-                            background-color: $quinary;
+                            background-color: $tertiary;
                             border-radius: .25rem;
 
                             li {
                                 padding: .5rem 0;
-                                background-color: $quinary;
+                                background-color: $tertiary;
 
                                 a {
-                                    color: $tertiary;
-                                    border-bottom: 2px solid $quinary;
+                                    color: $fontSecondary;
+                                    border-bottom: 2px solid $tertiary;
                                     transition: .5s;
 
                                     &:hover,
                                     &:focus {
-                                        border-bottom: $tertiary 2px solid;
+                                        border-bottom: $quaternary 2px solid;
+                                        opacity: 1;
                                     }
                                 }
                             }
@@ -79,13 +79,13 @@ nav {
                     a {
                         text-decoration: none;
                         border-bottom: $secondary 2px solid;
-                        color: $tertiary;
+                        color: $fontPrimary;
                         transition: 0.5s;
 
                         &:hover,
                         &:focus {
-                            color: $tertiary;
-                            border-bottom: $quinary 2px solid;
+                            color: $fontPrimary;
+                            border-bottom: $tertiary 2px solid;
                         }
                     }
 

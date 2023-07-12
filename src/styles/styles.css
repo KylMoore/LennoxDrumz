@@ -428,9 +428,10 @@ html {
 
 body {
   background-image: url("/public/assets/FlyOverBW.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: center;
   background-position: center;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -521,8 +522,8 @@ button:hover, button:focus {
 
 nav {
   position: fixed;
-  background-color: #ffffff;
-  opacity: 0.75;
+  background-color: #FFFfff;
+  opacity: 0.9;
   left: 0;
   right: 0;
   z-index: 10;
@@ -561,41 +562,41 @@ nav .navBar .navBarList ul li div {
   cursor: pointer;
   transition: 0.5s;
   position: relative;
-  color: #10277a;
+  color: #020202;
 }
 nav .navBar .navBarList ul li div:hover, nav .navBar .navBarList ul li div:focus {
-  color: #10277a;
-  border-bottom: #CCB278 2px solid;
+  border-bottom: #10277a 2px solid;
 }
 nav .navBar .navBarList ul li div .productsAndServicesDropdown {
   position: absolute;
   flex-direction: column;
   top: 2rem;
   padding: 0 3rem;
-  background-color: #CCB278;
+  background-color: #10277a;
   border-radius: 0.25rem;
 }
 nav .navBar .navBarList ul li div .productsAndServicesDropdown li {
   padding: 0.5rem 0;
-  background-color: #CCB278;
+  background-color: #10277a;
 }
 nav .navBar .navBarList ul li div .productsAndServicesDropdown li a {
-  color: #10277a;
-  border-bottom: 2px solid #CCB278;
+  color: #FFFfff;
+  border-bottom: 2px solid #10277a;
   transition: 0.5s;
 }
 nav .navBar .navBarList ul li div .productsAndServicesDropdown li a:hover, nav .navBar .navBarList ul li div .productsAndServicesDropdown li a:focus {
-  border-bottom: #10277a 2px solid;
+  border-bottom: #ff2e1d 2px solid;
+  opacity: 1;
 }
 nav .navBar .navBarList ul li a {
   text-decoration: none;
   border-bottom: #ffffff 2px solid;
-  color: #10277a;
+  color: #020202;
   transition: 0.5s;
 }
 nav .navBar .navBarList ul li a:hover, nav .navBar .navBarList ul li a:focus {
-  color: #10277a;
-  border-bottom: #CCB278 2px solid;
+  color: #020202;
+  border-bottom: #10277a 2px solid;
 }
 nav .navBar .languageMenu {
   position: absolute;
@@ -658,22 +659,28 @@ nav .navBar .languageMenu select {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  max-width: 50vw;
   padding: 1rem;
   border-radius: 0.5rem;
+  background-color: #FFFfff;
+  opacity: 0.75;
 }
 .homePage .homePageHeader img {
   border-radius: 0.25rem;
-  opacity: 0.9;
-  max-width: 100%;
-  max-height: 100%;
+  opacity: 0.85;
+  max-width: 75%;
+  max-height: 75%;
 }
 
 .drumsSection {
   padding: 1rem 0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .drumsSection .wrapper {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(2, 2, 2, 0.75);
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -682,10 +689,12 @@ nav .navBar .languageMenu select {
 }
 .drumsSection .wrapper h1 {
   margin: 0;
-  border-bottom: 1px solid black;
+  color: #FFFfff;
+  border-bottom: 1px solid #FFFfff;
 }
 .drumsSection .wrapper h2 {
   margin: 0;
+  color: #FFFfff;
 }
 .drumsSection .wrapper img {
   height: 5rem;
@@ -693,6 +702,7 @@ nav .navBar .languageMenu select {
   border-radius: 0.25rem;
 }
 .drumsSection .wrapper p {
+  color: #020202;
   margin: 0.5rem;
 }
 .drumsSection .wrapper .drumsSectionHeader {
@@ -702,7 +712,7 @@ nav .navBar .languageMenu select {
   align-items: center;
 }
 .drumsSection .wrapper .drumsSectionContent {
-  background-color: rgba(255, 46, 29, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0.25rem;
 }
 .drumsSection .wrapper .drumSectionButtons {
@@ -719,9 +729,11 @@ nav .navBar .languageMenu select {
 
 .ibcsSection {
   padding: 1rem 0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .ibcsSection .wrapper {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(2, 2, 2, 0.75);
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -730,9 +742,11 @@ nav .navBar .languageMenu select {
 }
 .ibcsSection .wrapper h1 {
   margin: 0;
-  border-bottom: 1px solid black;
+  color: #FFFfff;
+  border-bottom: 1px solid #FFFfff;
 }
 .ibcsSection .wrapper h2 {
+  color: #FFFfff;
   margin: 2rem 0 1rem 0;
 }
 .ibcsSection .wrapper img {
@@ -750,15 +764,17 @@ nav .navBar .languageMenu select {
   align-items: center;
 }
 .ibcsSection .wrapper .ibcsSectionContent {
-  background-color: rgba(255, 46, 29, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0.25rem;
 }
 
 .regrindSection {
   padding: 1rem 0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .regrindSection .wrapper {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(2, 2, 2, 0.75);
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -767,9 +783,11 @@ nav .navBar .languageMenu select {
 }
 .regrindSection .wrapper h1 {
   margin: 0;
-  border-bottom: 1px solid black;
+  color: #FFFfff;
+  border-bottom: 1px solid #FFFfff;
 }
 .regrindSection .wrapper h2 {
+  color: #FFFfff;
   margin: 2rem 0 1rem 0;
 }
 .regrindSection .wrapper img {
@@ -787,7 +805,7 @@ nav .navBar .languageMenu select {
   align-items: center;
 }
 .regrindSection .wrapper .regrindSectionContent {
-  background-color: rgba(255, 46, 29, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0.25rem;
 }
 
@@ -820,8 +838,8 @@ nav .navBar .languageMenu select {
   display: flex;
 }
 .aboutSection .aboutPageHeader .aboutContainer .aboutImageContainer img {
-  height: 15em;
-  width: 15rem;
+  max-height: 90%;
+  max-width: 90%;
   border-radius: 0.25rem;
 }
 .aboutSection .aboutPageHeader .aboutContainer .aboutContent {
@@ -830,12 +848,13 @@ nav .navBar .languageMenu select {
   min-height: 300px;
   justify-content: center;
   flex-direction: column;
+  min-width: 50%;
 }
 .aboutSection .aboutPageHeader .aboutContainer .aboutContent p {
   font-size: 0.75rem;
 }
 .aboutSection .wrapper {
-  background-color: rgba(16, 39, 122, 0.75);
+  background-color: rgba(2, 2, 2, 0.75);
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -853,13 +872,15 @@ nav .navBar .languageMenu select {
 }
 .aboutSection .accordion:hover h3, .aboutSection .accordion:focus h3 {
   color: #FFFfff;
+  border-bottom: 2px solid #CCB278;
 }
 .aboutSection .accordion:hover svg, .aboutSection .accordion:focus svg {
-  fill: #ff2e1d;
+  fill: #CCB278;
 }
 .aboutSection .accordion h3 {
   margin: 0;
   transition: 0.5s;
+  border-bottom: 2px solid rgba(16, 39, 122, 0);
 }
 .aboutSection .accordion button {
   background-color: rgba(255, 255, 255, 0);
@@ -876,12 +897,14 @@ nav .navBar .languageMenu select {
 }
 .aboutSection .accordionContent {
   display: none;
+  transition: all 0.5s;
 }
 .aboutSection .accordionContent.active {
   display: block;
+  transition: all 0.5s;
 }
 .aboutSection p {
-  background-color: rgba(255, 46, 29, 0.5);
+  background-color: rgba(2, 2, 2, 0.65);
   color: #FFFfff;
   padding: 1rem;
   border-radius: 0.25rem;
@@ -894,10 +917,12 @@ nav .navBar .languageMenu select {
 }
 .productsAndServices h2 {
   align-self: center;
+  text-align: center;
   color: #FFFfff;
-  background-color: rgba(16, 39, 122, 0.9);
+  background-color: rgba(2, 2, 2, 0.75);
   border-radius: 0.25rem;
   padding: 0.5rem;
+  min-width: 60%;
 }
 .productsAndServices .wrapper {
   display: flex;
@@ -907,7 +932,7 @@ nav .navBar .languageMenu select {
 }
 .productsAndServices .product {
   background-color: rgba(16, 39, 122, 0.9);
-  color: #FFFfff;
+  background-color: rgba(2, 2, 2, 0.75);
   border-radius: 0.25rem;
   padding: 1rem;
   margin: 1rem 0;
@@ -932,6 +957,10 @@ nav .navBar .languageMenu select {
 }
 .productsAndServices .product a {
   color: #FFFfff;
+  transition: 0.5s;
+}
+.productsAndServices .product a:hover, .productsAndServices .product a:focus {
+  color: #ff2e1d;
 }
 .productsAndServices .product img {
   height: 5rem;
@@ -943,7 +972,7 @@ nav .navBar .languageMenu select {
 }
 
 .contactSection {
-  background-color: rgba(16, 39, 122, 0.75);
+  background-color: rgba(2, 2, 2, 0.75);
   border-radius: 0.25rem;
   padding: 1.5rem;
   margin-top: 5rem;
@@ -1075,7 +1104,7 @@ nav .navBar .languageMenu select {
 
 footer {
   background-color: #ffffff;
-  opacity: 0.75;
+  opacity: 0.9;
   display: flex;
   flex-direction: column;
   position: relative;

@@ -2,9 +2,11 @@
 
 .ibcsSection {
     padding: 1rem 0;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 
     .wrapper {
-        background-color: rgba($fontSecondary, $alpha: .75);
+        background-color: rgba($fontPrimary, $alpha: .75);
         border-radius: .25rem;
         display: flex;
         flex-direction: column;
@@ -13,10 +15,12 @@
 
         h1 {
             margin: 0;
-            border-bottom: 1px solid black;
+            color: $fontSecondary;
+            border-bottom: 1px solid $fontSecondary;
         }
 
         h2 {
+            color: $fontSecondary;
             margin: 2rem 0 1rem 0;
         }
         
@@ -38,7 +42,7 @@
         }
 
         .ibcsSectionContent {
-            background-color: rgba($quaternary, $alpha: 0.5);
+            background-color: rgba($fontSecondary, $alpha: 0.5);
             border-radius: .25rem;
         }
     }

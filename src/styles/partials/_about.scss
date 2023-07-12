@@ -34,8 +34,8 @@
                 display: flex;
 
                 img {
-                    height: 15em;
-                    width: 15rem;
+                    max-height: 90%;
+                    max-width: 90%;
                     border-radius: .25rem;
                 }
             }
@@ -45,6 +45,7 @@
                 min-height: 300px;
                 justify-content: center;
                 flex-direction: column;
+                min-width: 50%;
 
                 p {
                     font-size: .75rem;
@@ -54,7 +55,7 @@
     }
 
     .wrapper {
-        background-color: rgba($tertiary, $alpha: .75);
+        background-color: rgba($fontPrimary, $alpha: .75);
         border-radius: .25rem;
         display: flex;
         flex-direction: column;
@@ -77,16 +78,18 @@
             
             h3 {
                 color: $fontSecondary;
+                border-bottom: 2px solid $quinary;
             }
             
             svg {
-                fill: $quaternary;
+                fill: $quinary;
             }
         }
         
         h3 {
             margin: 0;
             transition: .5s;
+            border-bottom: 2px solid rgba($tertiary, $alpha: 0);
         }
 
         button{
@@ -107,15 +110,16 @@
     
     .accordionContent {
         display: none;
+        transition: all .5s;
     }
     
     .accordionContent.active {
         display: block;
-        
+        transition: all .5s;
     }
 
     p {
-        background-color: rgba($quaternary, $alpha: 0.5);
+        background-color: rgba($fontPrimary, $alpha: .65);
         color: $fontSecondary;
         padding: 1rem;
         border-radius: .25rem;

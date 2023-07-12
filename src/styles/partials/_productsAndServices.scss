@@ -6,10 +6,12 @@
 
     h2 {
         align-self: center;
+        text-align: center;
         color: $fontSecondary;
-        background-color: rgba($tertiary, $alpha: .9);
+        background-color: rgba($fontPrimary, $alpha: .75);
         border-radius: .25rem;
         padding: .5rem;
+        min-width: 60%;
     }
 
     .wrapper {
@@ -21,7 +23,7 @@
 
     .product {
         background-color: rgba($tertiary, $alpha: .9);
-        color: $fontSecondary;
+        background-color: rgba($fontPrimary, $alpha: .75);
         border-radius: .25rem;
         padding: 1rem;
         margin: 1rem 0;
@@ -50,6 +52,11 @@
         }
         a {
             color: $fontSecondary;
+            transition: .5s;
+
+            &:hover, &:focus {
+                color: $quaternary;
+            }
         }
 
         img {

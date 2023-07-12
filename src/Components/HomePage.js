@@ -6,7 +6,7 @@ const HomePage = () => {
       <div className="homePageHeader wrapper">
         {/* <h1>Lennox Drum Ltd.</h1> */}
         <img
-          src="./assets/Lennox-Drum-home.jpg"
+          src="./assets/Lennox-logo.jpg"
           alt="Lennox Drum ltd. logo"
         />
       </div>

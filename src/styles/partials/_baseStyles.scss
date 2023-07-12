@@ -6,9 +6,10 @@ html {
 
 body {
     background-image: url("/public/assets/FlyOverBW.jpg");
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: center;
     background-position: center;
+    background-attachment: fixed;
 }
 
 h1 {
