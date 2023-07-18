@@ -21,9 +21,11 @@ const Drums = () => {
     en: {
       productsAndServices: "Products & Services",
       drums: "Drums",
-      new: "New: A complete line of new steel, plastic and fibre drums are available.",
+      newHeader: "New: ",
+      new: "A complete line of new steel, plastic and fibre drums are available.",
+      reconditionedHeader: "Reconditioned: ",
       reconditioned:
-        "Reconditioned: Industrial drums of all types can be reconditioned for both TDG and non-regulated use",
+        "Industrial drums of all types can be reconditioned for both TDG and non-regulated use",
       customerOwned:
         "*Customer-Owned drums can be reconditioned, recertified and returned to the customer. We also have our own reconditioned drums available for sale.*",
       drumAcceptancePolicy: "Drum Acceptance Policy",
@@ -32,9 +34,11 @@ const Drums = () => {
     fr: {
       productsAndServices: "Produits et Services",
       drums: "Fûts",
-      new: "Nouveau: Une gamme complète de fûts neufs en acier, plastique et fibre est disponible.",
+      newHeader: "Nouveau: ",
+      new: "Une gamme complète de fûts neufs en acier, plastique et fibre est disponible.",
+      reconditionedHeader: "Reconditionné: ",
       reconditioned:
-        "Reconditionné: Les fûts industriels de tous types peuvent être reconditionnés pour une utilisation réglementée et non réglementée.",
+        "Les fûts industriels de tous types peuvent être reconditionnés pour une utilisation réglementée et non réglementée.",
       customerOwned:
         "*Les fûts appartenant aux clients peuvent être reconditionnés, recertifiés et retournés au client. Nous avons également nos propres fûts reconditionnés en vente.*",
       drumAcceptancePolicy: "Politique d'acceptation des fûts",
@@ -53,14 +57,16 @@ const Drums = () => {
         </div>
         <div className="drumsSectionContent">
           <p>
+            <strong>{content[language].newHeader}</strong>
             {content[language].new}
             {content[language].completeLineOfNewDrums}
           </p>
           <p>
+            <strong>{content[language].reconditionedHeader}</strong>
             {content[language].reconditioned}
             {content[language].industrialDrumsReconditioned}
           </p>
-          <p>{content[language].customerOwned}</p>
+          <p><i>{content[language].customerOwned}</i></p>
         </div>
         <div className="drumSectionButtons">
           <button

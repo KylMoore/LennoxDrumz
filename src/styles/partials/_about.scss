@@ -119,8 +119,8 @@
     }
 
     p {
-        background-color: rgba($fontPrimary, $alpha: .65);
-        color: $fontSecondary;
+        background-color: rgba($fontSecondary, $alpha: 1);
+        color: $fontPrimary;
         padding: 1rem;
         border-radius: .25rem;
         font-size: .75rem;

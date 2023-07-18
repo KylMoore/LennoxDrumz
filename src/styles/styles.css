@@ -467,6 +467,7 @@ p {
   font-family: "Roboto Serif", serif;
   font-weight: 400;
   color: #020202;
+  line-height: 1rem;
 }
 
 a {
@@ -703,7 +704,8 @@ nav .navBar .languageMenu select {
 }
 .drumsSection .wrapper p {
   color: #020202;
-  margin: 0.5rem;
+  margin: 1rem;
+  line-height: 1.5rem;
 }
 .drumsSection .wrapper .drumsSectionHeader {
   display: flex;
@@ -712,7 +714,7 @@ nav .navBar .languageMenu select {
   align-items: center;
 }
 .drumsSection .wrapper .drumsSectionContent {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
   border-radius: 0.25rem;
 }
 .drumsSection .wrapper .drumSectionButtons {
@@ -755,7 +757,8 @@ nav .navBar .languageMenu select {
   border-radius: 0.25rem;
 }
 .ibcsSection .wrapper p {
-  margin: 0.5rem;
+  margin: 1rem;
+  line-height: 1.5rem;
 }
 .ibcsSection .wrapper .ibcsSectionHeader {
   display: flex;
@@ -764,7 +767,7 @@ nav .navBar .languageMenu select {
   align-items: center;
 }
 .ibcsSection .wrapper .ibcsSectionContent {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
   border-radius: 0.25rem;
 }
 
@@ -796,7 +799,8 @@ nav .navBar .languageMenu select {
   border-radius: 0.25rem;
 }
 .regrindSection .wrapper p {
-  margin: 0.5rem;
+  margin: 1rem;
+  line-height: 1.5rem;
 }
 .regrindSection .wrapper .regrindSectionHeader {
   display: flex;
@@ -805,7 +809,7 @@ nav .navBar .languageMenu select {
   align-items: center;
 }
 .regrindSection .wrapper .regrindSectionContent {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
   border-radius: 0.25rem;
 }
 
@@ -904,8 +908,8 @@ nav .navBar .languageMenu select {
   transition: all 0.5s;
 }
 .aboutSection p {
-  background-color: rgba(2, 2, 2, 0.65);
-  color: #FFFfff;
+  background-color: white;
+  color: #020202;
   padding: 1rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;
