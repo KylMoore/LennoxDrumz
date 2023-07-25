@@ -901,8 +901,8 @@ nav .navBar .languageMenu select {
 }
 .aboutSection .aboutPageHeader .aboutContainer .aboutContent {
   display: flex;
-  width: 600px;
-  max-width: 600px;
+  width: 715px;
+  max-width: 715px;
   min-height: 300px;
   justify-content: center;
   flex-direction: column;
