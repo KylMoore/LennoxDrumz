@@ -653,16 +653,15 @@ nav .navBar .languageMenu select {
 }
 
 .homePage {
-  margin-top: 10rem;
-  margin-bottom: 7.5rem;
-  min-height: 45vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .homePage .homePageHeader {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
   max-width: 50vw;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -872,13 +871,13 @@ nav .navBar .languageMenu select {
   margin-bottom: 5rem;
 }
 .aboutSection .aboutPageHeader h1 {
-  margin: 0 0 2rem 0;
-  border-bottom: 1px solid white;
+  margin: 0;
   color: #FFFfff;
+  border-bottom: 1px solid #FFFfff;
 }
 .aboutSection .aboutPageHeader h2 {
   font-size: 1.5rem;
-  margin: 0 0 1rem 0;
+  margin: 2rem 0 0 0;
   color: #FFFfff;
 }
 .aboutSection .aboutPageHeader h3 {
@@ -887,25 +886,26 @@ nav .navBar .languageMenu select {
 }
 .aboutSection .aboutPageHeader .aboutContainer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 0;
+  align-content: center;
 }
 .aboutSection .aboutPageHeader .aboutContainer .aboutImageContainer {
   display: flex;
+  align-items: flex-start;
+  width: 400px;
+  max-width: 400px;
 }
 .aboutSection .aboutPageHeader .aboutContainer .aboutImageContainer img {
-  max-height: 90%;
-  max-width: 90%;
+  width: 100%;
   border-radius: 0.25rem;
+  margin: 1rem 1rem 1rem 0;
 }
 .aboutSection .aboutPageHeader .aboutContainer .aboutContent {
   display: flex;
-  width: 50%;
+  width: 600px;
+  max-width: 600px;
   min-height: 300px;
   justify-content: center;
   flex-direction: column;
-  min-width: 50%;
 }
 .aboutSection .aboutPageHeader .aboutContainer .aboutContent p {
   font-size: 0.75rem;

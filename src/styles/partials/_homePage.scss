@@ -1,15 +1,15 @@
 @use "./variables" as *;
 
 .homePage {
-    margin-top: 10rem;
-    margin-bottom: 7.5rem;
-    min-height: 45vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     .homePageHeader {
         display: flex;
         justify-content: center;
         align-items: center;
-        max-height: fit-content;
         max-width: 50vw;
         padding: 1rem;
         border-radius: 0.5rem;
@@ -17,7 +17,6 @@
         opacity: .75;
 
         img {
-        
             border-radius: .25rem;
             opacity: .85;
             max-width: 75%;
