@@ -906,6 +906,7 @@ nav .navBar .languageMenu select {
   min-height: 300px;
   justify-content: center;
   flex-direction: column;
+  margin-left: 1rem;
 }
 .aboutSection .aboutPageHeader .aboutContainer .aboutContent p {
   font-size: 0.75rem;
