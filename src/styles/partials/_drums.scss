@@ -20,14 +20,8 @@
         }
 
         h2 {
-            margin: 0;
+            margin: 2rem 0 0 0;
             color: $fontSecondary;
-        }
-
-        img {
-            height: 5rem;
-            width: 5rem;
-            border-radius: .25rem;
         }
 
         p {
@@ -46,6 +40,42 @@
         .drumsSectionContent {
             background-color: rgba($fontSecondary, $alpha: 1);
             border-radius: .25rem;
+            display: flex;
+            flex-direction: column;
+
+            .drumsSectionTop {
+                display: flex;
+                flex-direction: row-reverse;
+
+                .drumsSectionLeft {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                .drumsSectionRight {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        max-height: 15rem;
+                        width: 15rem;
+                        border-radius: .25rem;
+                        margin: 1rem;
+                    }
+                }
+            }
+
+            .drumsSectionBottom {
+
+                p {
+    
+                    i {
+                        font-size: 0.75rem;
+                    }
+                }
+            }
         }
 
         .drumSectionButtons {
@@ -54,10 +84,11 @@
             justify-content: space-between;
             align-items: center;
             align-content: center;
-
+            
             button {
                 width: 47.5%;
                 font-size: 0.75rem;
+                cursor: pointer;
             }
         }
     }

@@ -44,19 +44,29 @@ const IBCs = () => {
         <h1>{text.title}</h1>
         <div className="ibcsSectionHeader">
           <h2>{text.subtitle}</h2>
-          <img src="./assets/old-drums.jpg" alt="ibcs" />
+          {/* <img src="./assets/old-drums.jpg" alt="ibcs" /> */}
         </div>
         <div className="ibcsSectionContent">
-          <p>{text.firstParagraph}</p>
-          <p>
-            <span>{text.new}</span> {text.newContent}
-          </p>
-          <p>
-            <span>{text.reconditioned}</span> {text.reconditionedContent}
-          </p>
-          <p>
-            <span>{text.disposal}</span> {text.disposalContent}
-          </p>
+          <div className="ibcsSectionContentTop">
+            <p><strong>{text.firstParagraph}</strong></p>
+          </div>
+          <div className="ibcsSectionContentBottom">
+            <div className="ibcsSectionContentLeft">
+
+              <p>
+                <span><strong>{text.new}</strong></span> {text.newContent}
+              </p>
+              <p>
+                <span><strong>{text.reconditioned}</strong></span> {text.reconditionedContent}
+              </p>
+              <p>
+                <span><strong>{text.disposal}</strong></span> {text.disposalContent}
+              </p>
+            </div>
+            <div className="ibcsSectionContentRight">
+              <img src="./assets/old-drums.jpg" alt="ibcs" />
+            </div>
+          </div>
         </div>
       </div>
     </section>

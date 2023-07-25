@@ -655,6 +655,7 @@ nav .navBar .languageMenu select {
 .homePage {
   margin-top: 10rem;
   margin-bottom: 7.5rem;
+  min-height: 45vh;
 }
 .homePage .homePageHeader {
   display: flex;
@@ -694,13 +695,8 @@ nav .navBar .languageMenu select {
   border-bottom: 1px solid #FFFfff;
 }
 .drumsSection .wrapper h2 {
-  margin: 0;
+  margin: 2rem 0 0 0;
   color: #FFFfff;
-}
-.drumsSection .wrapper img {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 0.25rem;
 }
 .drumsSection .wrapper p {
   color: #020202;
@@ -716,6 +712,31 @@ nav .navBar .languageMenu select {
 .drumsSection .wrapper .drumsSectionContent {
   background-color: white;
   border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.drumsSection .wrapper .drumsSectionContent .drumsSectionTop {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.drumsSection .wrapper .drumsSectionContent .drumsSectionTop .drumsSectionLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.drumsSection .wrapper .drumsSectionContent .drumsSectionTop .drumsSectionRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drumsSection .wrapper .drumsSectionContent .drumsSectionTop .drumsSectionRight img {
+  max-height: 15rem;
+  width: 15rem;
+  border-radius: 0.25rem;
+  margin: 1rem;
+}
+.drumsSection .wrapper .drumsSectionContent .drumsSectionBottom p i {
+  font-size: 0.75rem;
 }
 .drumsSection .wrapper .drumSectionButtons {
   padding: 1rem 0 0 0;
@@ -727,6 +748,7 @@ nav .navBar .languageMenu select {
 .drumsSection .wrapper .drumSectionButtons button {
   width: 47.5%;
   font-size: 0.75rem;
+  cursor: pointer;
 }
 
 .ibcsSection {
@@ -749,12 +771,7 @@ nav .navBar .languageMenu select {
 }
 .ibcsSection .wrapper h2 {
   color: #FFFfff;
-  margin: 2rem 0 1rem 0;
-}
-.ibcsSection .wrapper img {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 0.25rem;
+  margin: 2rem 0 0 0;
 }
 .ibcsSection .wrapper p {
   margin: 1rem;
@@ -769,6 +786,30 @@ nav .navBar .languageMenu select {
 .ibcsSection .wrapper .ibcsSectionContent {
   background-color: white;
   border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.ibcsSection .wrapper .ibcsSectionContent .ibcsSectionContentTop {
+  display: flex;
+}
+.ibcsSection .wrapper .ibcsSectionContent .ibcsSectionContentBottom {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.ibcsSection .wrapper .ibcsSectionContent .ibcsSectionContentBottom .ibcsSectionContentLeft {
+  display: flex;
+  flex-direction: column;
+}
+.ibcsSection .wrapper .ibcsSectionContent .ibcsSectionContentBottom .ibcsSectionContentRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ibcsSection .wrapper .ibcsSectionContent .ibcsSectionContentBottom .ibcsSectionContentRight img {
+  max-height: 15rem;
+  max-width: 15rem;
+  border-radius: 0.25rem;
+  margin: 1rem;
 }
 
 .regrindSection {
@@ -791,12 +832,7 @@ nav .navBar .languageMenu select {
 }
 .regrindSection .wrapper h2 {
   color: #FFFfff;
-  margin: 2rem 0 1rem 0;
-}
-.regrindSection .wrapper img {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 0.25rem;
+  margin: 2rem 0 0 0;
 }
 .regrindSection .wrapper p {
   margin: 1rem;
@@ -811,6 +847,23 @@ nav .navBar .languageMenu select {
 .regrindSection .wrapper .regrindSectionContent {
   background-color: white;
   border-radius: 0.25rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.regrindSection .wrapper .regrindSectionContent .regrindSectionContentLeft {
+  display: flex;
+  flex-direction: column;
+}
+.regrindSection .wrapper .regrindSectionContent .regrindSectionContentRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.regrindSection .wrapper .regrindSectionContent .regrindSectionContentRight img {
+  max-height: 15rem;
+  max-width: 15rem;
+  border-radius: 0.25rem;
+  margin: 1rem;
 }
 
 .aboutSection {
@@ -1033,7 +1086,7 @@ nav .navBar .languageMenu select {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  max-width: 60%;
+  max-width: 600px;
   min-width: 30%;
   margin: 5rem auto;
   padding: 1rem 0.5rem 0;
@@ -1083,6 +1136,7 @@ nav .navBar .languageMenu select {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   overflow-y: auto;
   border-radius: 0.25rem;
+  max-width: 600px;
 }
 .policyModal .policyModalContent .policyModalContentStyling {
   position: absolute;

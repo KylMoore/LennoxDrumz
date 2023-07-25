@@ -21,14 +21,10 @@
 
         h2 {
             color: $fontSecondary;
-            margin: 2rem 0 1rem 0;
+            margin: 2rem 0 0 0;
         }
         
-        img {
-            height: 5rem;
-            width: 5rem;
-            border-radius: .25rem;
-        }
+        
 
         p {
             margin: 1rem;
@@ -45,6 +41,36 @@
         .ibcsSectionContent {
             background-color: rgba($fontSecondary, $alpha: 1);
             border-radius: .25rem;
+            display: flex;
+            flex-direction: column;
+
+            .ibcsSectionContentTop {
+                display: flex;
+            }
+
+            .ibcsSectionContentBottom {
+                display: flex;
+                flex-direction: row-reverse;
+
+                .ibcsSectionContentLeft {
+                    display: flex;
+                    flex-direction: column;
+                }
+    
+                .ibcsSectionContentRight {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    img {
+                        max-height: 15rem;
+                        max-width: 15rem;
+                        border-radius: .25rem;
+                        margin: 1rem;
+                    }
+                }
+            }
+
         }
     }
 }

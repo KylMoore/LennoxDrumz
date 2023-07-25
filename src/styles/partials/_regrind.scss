@@ -21,14 +21,10 @@
 
         h2 {
             color: $fontSecondary;
-            margin: 2rem 0 1rem 0;
+            margin: 2rem 0 0 0;
         }
 
-        img {
-            height: 5rem;
-            width: 5rem;
-            border-radius: .25rem;
-        }
+
 
         p {
             margin: 1rem;
@@ -45,6 +41,26 @@
         .regrindSectionContent {
             background-color: rgba($fontSecondary, $alpha: 1);
             border-radius: .25rem;
+            display: flex;
+            flex-direction: row-reverse;
+
+            .regrindSectionContentLeft {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .regrindSectionContentRight {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-height: 15rem;
+                    max-width: 15rem;
+                    border-radius: .25rem;
+                    margin: 1rem;
+                }
+            }
         }
     }
 }

@@ -53,20 +53,29 @@ const Drums = () => {
         <h1>{content[language].productsAndServices}</h1>
         <div className="drumsSectionHeader">
           <h2>{content[language].drums}</h2>
-          <img src="./assets/old-drums.jpg" alt="drums" />
+
         </div>
         <div className="drumsSectionContent">
-          <p>
-            <strong>{content[language].newHeader}</strong>
-            {content[language].new}
-            {content[language].completeLineOfNewDrums}
-          </p>
-          <p>
-            <strong>{content[language].reconditionedHeader}</strong>
-            {content[language].reconditioned}
-            {content[language].industrialDrumsReconditioned}
-          </p>
-          <p><i>{content[language].customerOwned}</i></p>
+          <div className="drumsSectionTop">
+            <div className="drumsSectionLeft">
+              <p>
+                <strong>{content[language].newHeader}</strong>
+                {content[language].new}
+                {content[language].completeLineOfNewDrums}
+              </p>
+              <p>
+                <strong>{content[language].reconditionedHeader}</strong>
+                {content[language].reconditioned}
+                {content[language].industrialDrumsReconditioned}
+              </p>
+            </div>
+            <div className="drumsSectionRight">
+              <img src="./assets/old-drums.jpg" alt="drums" />
+            </div>
+          </div>
+          <div className="drumsSectionBottom">
+            <p><i>{content[language].customerOwned}</i></p>
+          </div>
         </div>
         <div className="drumSectionButtons">
           <button
