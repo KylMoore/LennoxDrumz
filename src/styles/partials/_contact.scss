@@ -1,48 +1,57 @@
 @use "./variables" as *;
 
 .contactSection {
-    background-color: rgba($fontPrimary, $alpha: .75);
-    border-radius: 0.25rem;
-    padding: 1.5rem;
+    padding: 1rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
 
-    .contactContent {
+    .wrapper {
+        background-color: rgba($fontPrimary, $alpha: .75);
+        border-radius: .25rem;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.5rem;
 
-        .contactHeader{
+        .contactContent {
             display: flex;
-            flex-direction: column;
-            width: 32.5%;
+            justify-content: space-between;
 
-            h2 {
-                margin: 2rem 0 1rem 0;
-                color: $fontSecondary;
+            .contactHeader {
+                display: flex;
+                flex-direction: column;
+                width: 32.5%;
+
+                h2 {
+                    margin: 2rem 0 1rem 0;
+                    color: $fontSecondary;
+                }
+
+                p {
+                    color: $fontSecondary;
+                }
             }
 
-            p {
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 62.5%;
                 color: $fontSecondary;
+
+                input {
+                    margin: .5rem 0;
+                    padding: 0.25rem;
+                }
+
+                textarea {
+                    margin: .5rem 0;
+                    min-height: 5rem;
+                    width: 100%;
+                    padding: .25rem;
+                }
             }
         }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            width: 62.5%;
-            color: $fontSecondary;
-
-            input {
-                margin: .5rem 0;
-                padding: 0.25rem;
-            }
-
-            textarea {
-                margin: .5rem 0;
-                min-height: 5rem;
-                width: 100%;
-                padding: .25rem;
-            }
-        }
     }
+
 }

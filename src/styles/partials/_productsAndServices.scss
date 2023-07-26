@@ -1,6 +1,7 @@
 @use "./variables" as *;
 
 .productsAndServices {
+    padding: 1rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
 
@@ -34,38 +35,70 @@
         h3 {
             margin: 0;
             color: $fontSecondary;
+            border-bottom: 1px solid $fontSecondary;
         }
 
         h4 {
-            margin: .25rem 0 0 0;
+            margin: 1.5rem 0 .25rem 0;
             color: $fontSecondary;
         }
 
-        ul {
-            width: 75%;
-            padding: 0 0 0 1rem;
-            
-            li {
-                color: $fontSecondary;
+        .productsAndServicesContent {
+            background-color: rgba($fontSecondary, $alpha: 1);
+            border-radius: .25rem;
+            display: flex;
+            flex-direction: column;
 
+
+            .productsAndServicesLeftAndRight {
+                display: flex;
+                flex-direction: row;
+
+                .productsAndServicesLeft {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    ul {
+                        padding: 0 0 0 1rem;
+
+                        li {
+                            color: $fontPrimary;
+                            margin: 0 1rem;
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+
+                .productsAndServicesRight {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        max-height: 10rem;
+                        width: 10rem;
+                        border-radius: .25rem;
+                        margin: 1rem;
+                    }
+                }
+            }
+
+
+            a {
+                color: $fontPrimary;
+                transition: .5s;
+                margin: 0 0 1rem 1rem;
+
+                &:hover,
+                &:focus {
+                    color: $quaternary;
+                }
             }
         }
-        a {
-            color: $fontSecondary;
-            transition: .5s;
 
-            &:hover, &:focus {
-                color: $quaternary;
-            }
-        }
 
-        img {
-            height: 5rem;
-            width: 5rem;
-            position: absolute;
-            top: 50%;
-            right: 1rem;
-            transform: translate(-5%, -50%);
-        }
+
+
     }
 }

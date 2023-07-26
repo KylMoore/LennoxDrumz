@@ -84,14 +84,20 @@ const ProductsAndServices = () => {
         <h2>{currentTranslations.title}</h2>
         <div className="product">
           <h3>{currentTranslations.drums.title}</h3>
-          <img src="./assets/old-drums.jpg" alt="" />
-          <div>
-            <h4>{currentTranslations.drums.company}</h4>
-            <ul>
-              {currentTranslations.drums.items.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
+          <h4>{currentTranslations.drums.company}</h4>
+          <div className="productsAndServicesContent">
+            <div className="productsAndServicesLeftAndRight">
+              <div className="productsAndServicesLeft">
+                <ul>
+                  {currentTranslations.drums.items.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="productsAndServicesRight">
+                <img src="./assets/old-drums.jpg" alt="" />
+              </div>
+            </div>
             <Link to="/drums" aria-label="Navigate to Drums page" title="Drums">
               {currentTranslations.drums.link}
             </Link>
@@ -99,14 +105,20 @@ const ProductsAndServices = () => {
         </div>
         <div className="product">
           <h3>{currentTranslations.ibcs.title}</h3>
-          <img src="./assets/old-drums.jpg" alt="" />
-          <div>
-            <h4>{currentTranslations.ibcs.company}</h4>
-            <ul>
-              {currentTranslations.ibcs.items.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
+          <h4>{currentTranslations.ibcs.company}</h4>
+          <div className="productsAndServicesContent">
+            <div className="productsAndServicesLeftAndRight">
+              <div className="productsAndServicesLeft">
+                <ul>
+                  {currentTranslations.ibcs.items.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="productsAndServicesRight">
+                <img src="./assets/old-drums.jpg" alt="" />
+              </div>
+            </div>
             <Link to="/ibcs" aria-label="Navigate to IBC's page" title="IBC's">
               {currentTranslations.ibcs.link}
             </Link>
@@ -114,14 +126,20 @@ const ProductsAndServices = () => {
         </div>
         <div className="product">
           <h3>{currentTranslations.regrind.title}</h3>
-          <img src="./assets/old-drums.jpg" alt="" />
-          <div>
-            <h4>{currentTranslations.regrind.company}</h4>
-            <ul>
-              {currentTranslations.regrind.items.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
+          <h4>{currentTranslations.regrind.company}</h4>
+          <div className="productsAndServicesContent">
+            <div className="productsAndServicesLeftAndRight">
+              <div className="productsAndServicesLeft">
+                <ul>
+                  {currentTranslations.regrind.items.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="productsAndServicesRight">
+                <img src="./assets/old-drums.jpg" alt="" />
+              </div>
+            </div>
             <Link
               to="/regrind"
               aria-label="Navigate to regrind page"

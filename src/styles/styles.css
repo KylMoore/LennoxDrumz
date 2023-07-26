@@ -970,6 +970,7 @@ nav .navBar .languageMenu select {
 }
 
 .productsAndServices {
+  padding: 1rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
@@ -1001,68 +1002,95 @@ nav .navBar .languageMenu select {
 .productsAndServices .product h3 {
   margin: 0;
   color: #FFFfff;
+  border-bottom: 1px solid #FFFfff;
 }
 .productsAndServices .product h4 {
-  margin: 0.25rem 0 0 0;
+  margin: 1.5rem 0 0.25rem 0;
   color: #FFFfff;
 }
-.productsAndServices .product ul {
-  width: 75%;
+.productsAndServices .product .productsAndServicesContent {
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.productsAndServices .product .productsAndServicesContent .productsAndServicesLeftAndRight {
+  display: flex;
+  flex-direction: row;
+}
+.productsAndServices .product .productsAndServicesContent .productsAndServicesLeftAndRight .productsAndServicesLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.productsAndServices .product .productsAndServicesContent .productsAndServicesLeftAndRight .productsAndServicesLeft ul {
   padding: 0 0 0 1rem;
 }
-.productsAndServices .product ul li {
-  color: #FFFfff;
+.productsAndServices .product .productsAndServicesContent .productsAndServicesLeftAndRight .productsAndServicesLeft ul li {
+  color: #020202;
+  margin: 0 1rem;
+  line-height: 1.5rem;
 }
-.productsAndServices .product a {
-  color: #FFFfff;
+.productsAndServices .product .productsAndServicesContent .productsAndServicesLeftAndRight .productsAndServicesRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productsAndServices .product .productsAndServicesContent .productsAndServicesLeftAndRight .productsAndServicesRight img {
+  max-height: 10rem;
+  width: 10rem;
+  border-radius: 0.25rem;
+  margin: 1rem;
+}
+.productsAndServices .product .productsAndServicesContent a {
+  color: #020202;
   transition: 0.5s;
+  margin: 0 0 1rem 1rem;
 }
-.productsAndServices .product a:hover, .productsAndServices .product a:focus {
+.productsAndServices .product .productsAndServicesContent a:hover, .productsAndServices .product .productsAndServicesContent a:focus {
   color: #ff2e1d;
-}
-.productsAndServices .product img {
-  height: 5rem;
-  width: 5rem;
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  transform: translate(-5%, -50%);
 }
 
 .contactSection {
-  background-color: rgba(2, 2, 2, 0.75);
-  border-radius: 0.25rem;
-  padding: 1.5rem;
+  padding: 1rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-.contactSection .contactContent {
+.contactSection .wrapper {
+  background-color: rgba(2, 2, 2, 0.75);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.contactSection .wrapper .contactContent {
   display: flex;
   justify-content: space-between;
 }
-.contactSection .contactContent .contactHeader {
+.contactSection .wrapper .contactContent .contactHeader {
   display: flex;
   flex-direction: column;
   width: 32.5%;
 }
-.contactSection .contactContent .contactHeader h2 {
+.contactSection .wrapper .contactContent .contactHeader h2 {
   margin: 2rem 0 1rem 0;
   color: #FFFfff;
 }
-.contactSection .contactContent .contactHeader p {
+.contactSection .wrapper .contactContent .contactHeader p {
   color: #FFFfff;
 }
-.contactSection .contactContent form {
+.contactSection .wrapper .contactContent form {
   display: flex;
   flex-direction: column;
   width: 62.5%;
   color: #FFFfff;
 }
-.contactSection .contactContent form input {
+.contactSection .wrapper .contactContent form input {
   margin: 0.5rem 0;
   padding: 0.25rem;
 }
-.contactSection .contactContent form textarea {
+.contactSection .wrapper .contactContent form textarea {
   margin: 0.5rem 0;
   min-height: 5rem;
   width: 100%;
@@ -1072,6 +1100,8 @@ nav .navBar .languageMenu select {
 .preparingContainersModal {
   position: fixed;
   display: flex;
+  justify-content: center;
+  align-content: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
