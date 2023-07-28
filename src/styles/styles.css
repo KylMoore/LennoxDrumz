@@ -1119,6 +1119,8 @@ nav .navBar .languageMenu select {
   background-color: #ffffff;
   max-width: 600px;
   min-width: 30%;
+  height: 40%;
+  max-height: 40%;
   margin: 5rem auto;
   padding: 1rem 0.5rem 0;
   border-radius: 0.25rem;
@@ -1163,7 +1165,8 @@ nav .navBar .languageMenu select {
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   max-width: 60%;
-  height: 80%;
+  height: 40%;
+  max-height: 40%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   overflow-y: auto;
   border-radius: 0.25rem;
@@ -1171,11 +1174,12 @@ nav .navBar .languageMenu select {
 }
 .policyModal .policyModalContent .policyModalContentStyling {
   position: absolute;
+  line-height: 1.5rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-height: 80%;
-  width: 80%;
+  width: 100%;
 }
 .policyModal .policyModalContent .policyModalContentStyling h3 {
   margin: 0;
