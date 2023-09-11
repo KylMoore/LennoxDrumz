@@ -91,3 +91,20 @@ button {
   margin: 0 auto;
   max-width: 1200px;
 }
+
+.fa-xmark {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.8rem;
+            color: #fff;
+            background: $quaternary;
+            border-radius: 50%;
+            padding: 0.2rem 0.3rem;
+            z-index: 99;
+            &:hover
+            &:focus {
+                color: $quaternary;
+                background: #fff;
+                transition: ease-in-out 0.3s;
+            }
+        }

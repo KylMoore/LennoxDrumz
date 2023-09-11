@@ -313,6 +313,22 @@ button:hover, button:focus {
   max-width: 1200px;
 }
 
+.fa-xmark {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.8rem;
+  color: #fff;
+  background: #ff2e1d;
+  border-radius: 50%;
+  padding: 0.2rem 0.3rem;
+  z-index: 99;
+}
+.fa-xmark:hover .fa-xmark:focus {
+  color: #ff2e1d;
+  background: #fff;
+  transition: ease-in-out 0.3s;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -920,6 +936,7 @@ nav .navBar .languageMenu select {
   margin: 5rem auto;
   padding: 1rem 0.5rem 0;
   border-radius: 0.25rem;
+  position: relative;
 }
 .preparingContainersModal .preparingContainersContent h3 {
   margin: 0 0 1rem 0;
@@ -961,7 +978,7 @@ nav .navBar .languageMenu select {
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   max-width: 60%;
-  height: 70%;
+  height: 80%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   overflow-y: auto;
   border-radius: 0.25rem;
@@ -978,7 +995,6 @@ nav .navBar .languageMenu select {
 }
 .policyModal .policyModalContent .policyModalContentStyling h3 {
   margin: 0;
-  color: purple;
 }
 .policyModal .policyModalContent .policyModalContentStyling h4 {
   margin: 0;

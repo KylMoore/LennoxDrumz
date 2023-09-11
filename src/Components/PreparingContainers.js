@@ -1,6 +1,13 @@
-import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
 
-const PreparingContainers = () => {
+library.add(faXmark);
+
+const PreparingContainers = ({setOpenPreparation }) => {
+  const closeModal = () => {
+    setOpenPreparation(false);
+  };
   return (
     <div className="preparingContainersModal">
       <div
@@ -9,6 +16,7 @@ const PreparingContainers = () => {
           e.stopPropagation();
         }}
       >
+        <FontAwesomeIcon icon="fa-solid fa-xmark" onClick={closeModal} />
         <h3>Proper drum emptying procedure</h3>
         <h4>For Closed Head Drums</h4>
         <ul>

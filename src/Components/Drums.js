@@ -85,7 +85,7 @@ const Drums = () => {
             }}
           >
             {content[language].drumAcceptancePolicy}
-            {openPolicy ? <DrumAcceptancePolicy /> : null}
+            {openPolicy ? <DrumAcceptancePolicy handlePolicyClick={handlePolicyClick}  setOpenPolicy={setOpenPolicy}/> : null}
           </button>
           <button
             className="preparationButton"
@@ -94,7 +94,7 @@ const Drums = () => {
             }}
           >
             {content[language].preparingContainersForTransport}
-            {openPreparation ? <PreparingContainers /> : null}
+            {openPreparation ? <PreparingContainers setOpenPreparation={setOpenPreparation}/> : null}
           </button>
         </div>
       </div>

@@ -12,7 +12,7 @@ import { LanguageContext } from "./LanguageContext";
 const NavBar = () => {
   const { language } = useContext(LanguageContext);
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
-  const [showProductsMenu, setShowProductsMenu] = useState(true);
+  const [showProductsMenu, setShowProductsMenu] = useState(false);
 
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
