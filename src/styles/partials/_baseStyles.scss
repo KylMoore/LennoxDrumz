@@ -1,95 +1,93 @@
-@use "./variables" as *;
-
 html {
-    font-size: 125%;
+  font-size: 125%;
 }
 
 body {
-    background-image: url("/public/assets/grass.jpg");
-    background-repeat: no-repeat;
-    background-size: center;
-    background-position: center;
-    background-attachment: fixed;
+  background-image: url("/public/assets/grass.jpg");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-family: $roboto;
-    font-weight: 700;
-    color: $fontPrimary;
+  font-size: 2.5rem;
+  font-family: $roboto;
+  font-weight: 700;
+  color: $fontPrimary;
 }
 
 h2 {
-    font-size: 2rem;
-    font-family: $roboto;
-    font-weight: 700;
-    color: $fontPrimary;
+  font-size: 2rem;
+  font-family: $roboto;
+  font-weight: 700;
+  color: $fontPrimary;
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-family: $roboto;
-    font-weight: 700;
-    color: $fontPrimary;
+  font-size: 1.5rem;
+  font-family: $roboto;
+  font-weight: 700;
+  color: $fontPrimary;
 }
 
 h4 {
-    font-size: 1.25rem;
-    font-family: $roboto;
-    font-weight: 700;
-    color: $fontPrimary;
+  font-size: 1.25rem;
+  font-family: $roboto;
+  font-weight: 700;
+  color: $fontPrimary;
 }
 
-
 p {
-    font-size: 1rem;
-    font-family: $serif;
-    font-weight: 400;
-    color: $fontPrimary;
-    line-height: 1rem;
+  font-size: 1rem;
+  font-family: $serif;
+  font-weight: 400;
+  color: $fontPrimary;
+  line-height: 1rem;
 }
 
 a {
-    font-size: 1rem;
-    font-family: $serif;
-    font-weight: 400;
-    color: $fontPrimary;
+  font-size: 1rem;
+  font-family: $serif;
+  font-weight: 400;
+  color: $fontPrimary;
 }
 
 li {
-    font-size: 1rem;
-    font-family: $serif;
-    font-weight: 400;
-    color: $fontPrimary;
+  font-size: 1rem;
+  font-family: $serif;
+  font-weight: 400;
+  color: $fontPrimary;
 }
 
 div {
-    font-size: 1rem;
-    font-family: $serif;
-    font-weight: 400;
-    color: $fontPrimary;
+  font-size: 1rem;
+  font-family: $serif;
+  font-weight: 400;
+  color: $fontPrimary;
 }
 
 button {
-    font-size: 1rem;
-    font-family: $serif;
-    font-weight: 400;
-    color: $fontSecondary;
-    border: none;
-    border-radius: .25rem;
-    background-color: $quaternary;
-    color: $fontSecondary;
-    padding: 0.5rem 1rem;
-    transition: 0.5s;
+  font-size: 1rem;
+  font-family: $serif;
+  font-weight: 400;
+  color: $fontSecondary;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: $quaternary;
+  color: $fontSecondary;
+  padding: 0.5rem 1rem;
+  transition: 0.5s;
 
-    &:hover, &:focus {
-        background-color: $tertiary;
-        color: $fontSecondary;
-    }
+  &:hover,
+  &:focus {
+    background-color: $tertiary;
+    color: $fontSecondary;
+  }
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
 }

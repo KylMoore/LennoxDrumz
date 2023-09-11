@@ -10,6 +10,7 @@ const DrumAcceptancePolicy = () => {
         }}
       >
         <div className="policyModalContentStyling">
+          
           <h3>Drum Acceptance Policy</h3>
           <h4>Per: Transport Canada CAN/CGSB-43.126-98</h4>
           <ul>
