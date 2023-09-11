@@ -115,13 +115,17 @@
     }
 
     .accordionContent {
-        display: none;
-        transition: all .5s;
+        display: none;        
+        max-height: 0;
+        overflow: hidden;
+       
     }
 
     .accordionContent.active {
         display: block;
-        transition: all .5s;
+        max-height: max-content;
+        transition-delay: max-height ease-in-out 0.3s;
+        
     }
 
     p {

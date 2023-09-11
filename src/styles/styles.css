@@ -318,14 +318,13 @@ button:hover, button:focus {
   top: 0.5rem;
   right: 0.8rem;
   color: #fff;
-  background: #ff2e1d;
+  background: #10277a;
   border-radius: 50%;
   padding: 0.2rem 0.3rem;
   z-index: 99;
 }
-.fa-xmark:hover .fa-xmark:focus {
-  color: #ff2e1d;
-  background: #fff;
+.fa-xmark:hover, .fa-xmark:focus {
+  background: #ff2e1d;
   transition: ease-in-out 0.3s;
 }
 
@@ -370,6 +369,7 @@ nav .navBar {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 0 1rem 0;
 }
 nav .navBar .logo {
   position: absolute;
@@ -443,7 +443,7 @@ nav .navBar .languageMenu select {
   border: none;
   border-radius: 0.25rem;
   font-family: "Roboto", sans-serif;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #FFFfff;
   background-color: #10277a;
   margin: 0;
@@ -767,11 +767,14 @@ nav .navBar .languageMenu select {
 }
 .aboutSection .accordionContent {
   display: none;
-  transition: all 0.5s;
+  max-height: 0;
+  overflow: hidden;
 }
 .aboutSection .accordionContent.active {
   display: block;
-  transition: all 0.5s;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  transition-delay: max-height ease-in-out 0.3s;
 }
 .aboutSection p {
   background-color: white;

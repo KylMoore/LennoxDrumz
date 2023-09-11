@@ -97,14 +97,13 @@ button {
             top: 0.5rem;
             right: 0.8rem;
             color: #fff;
-            background: $quaternary;
+            background: $tertiary;
             border-radius: 50%;
             padding: 0.2rem 0.3rem;
             z-index: 99;
-            &:hover
+            &:hover,
             &:focus {
-                color: $quaternary;
-                background: #fff;
+                background: $quaternary;
                 transition: ease-in-out 0.3s;
             }
         }

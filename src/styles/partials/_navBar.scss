@@ -11,6 +11,7 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0 0 1rem 0;
         
         
         
@@ -107,11 +108,12 @@ nav {
                 // width: fit-content;
                 border-radius: 0.25rem;
                 font-family: $roboto;
-                font-size: 0.75rem;
+                font-size: 1rem;
                 color: $fontSecondary;
                 background-color: rgba($color: $tertiary, $alpha: 1);
                 margin: 0;
                 padding: 0.2rem 0.4rem;
+
                 cursor: pointer;
                 
         
