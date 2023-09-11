@@ -116,15 +116,19 @@ import { LanguageContext } from "./LanguageContext";
 const NavBar = () => {
   const { language } = useContext(LanguageContext);
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
-  const [showProductsMenu, setShowProductsMenu] = useState(false);
+  const [showProductsMenu, setShowProductsMenu] = useState(true);
 
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
   };
 
-  const toggleProductsMenu = () => {
-    setShowProductsMenu(!showProductsMenu);
+  const handleMouseEnter = () => {
+    setShowProductsMenu(true);
   };
+
+  const handleMouseLeave = () => {
+    setShowProductsMenu(false)
+  }
 
   const translations = {
     en: {
@@ -166,11 +170,14 @@ const NavBar = () => {
                 {translations[language].home}
               </Link>
             </li>
-            <li>
-              <div onClick={toggleProductsMenu}>
+            <li onMouseEnter={handleMouseEnter}>
+              <div style={{}}>
                 {translations[language].productsAndServices}
                 {showProductsMenu && (
-                  <ul className="productsAndServicesDropdown">
+                  <ul
+                    onMouseLeave={handleMouseLeave}
+                    className="productsAndServicesDropdown"
+                  >
                     <li>
                       <Link
                         to="/drums"
