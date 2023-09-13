@@ -27,9 +27,6 @@ const About = () => {
     setAccordion3Active(!accordion3Active);
   };
 
-  const accordionStyles = {
-    
-  }
 
   const englishContent = (
     <>
@@ -41,7 +38,7 @@ const About = () => {
         <div className="aboutContent">
           <div
             onClick={toggle1Accordion}
-            className={`accordion ${accordion1Active ? "active" : ""}`}
+            className={`accordion ${accordion1Active ? "active" : "inactive"}`}
           >
             <h3>Who are we?</h3>
             <button>
@@ -54,7 +51,7 @@ const About = () => {
             </button>
           </div>
 
-          <p className={`accordionContent ${accordion1Active ? "active" : ""}`}>
+          <p className={`accordionContent ${accordion1Active ? "active" : "inactive"}`}>
             We are located in Ajax, Ontario, Canada, and specialize in providing
             steel drum reconditioning, recycling, and waste management services
             to various industries. The company was founded in 1953 by Jim
@@ -64,7 +61,7 @@ const About = () => {
 
           <div
             onClick={toggle2Accordion}
-            className={`accordion ${accordion2Active ? "active" : ""}`}
+            className={`accordion ${accordion2Active ? "active" : "inactive"}`}
           >
             <h3 className="borderTop">What we do</h3>
             <button onClick={toggle2Accordion}>
@@ -77,7 +74,7 @@ const About = () => {
             </button>
           </div>
 
-          <p className={`accordionContent ${accordion2Active ? "active" : ""}`}>
+          <p className={`accordionContent ${accordion2Active ? "active" : "inactive"}`}>
             We offer a range of products and services, including the collection
             of used drums, the reconditioning of drums to meet industry
             standards, and the supply of new and reconditioned drums. The
@@ -88,7 +85,7 @@ const About = () => {
 
           <div
             onClick={toggle3Accordion}
-            className={`accordion ${accordion3Active ? "active" : ""}`}
+            className={`accordion ${accordion3Active ? "active" : "inactive"}`}
           >
             <h3 className="borderTop">Our goal</h3>
             <button onClick={toggle3Accordion}>
@@ -101,7 +98,7 @@ const About = () => {
             </button>
           </div>
 
-          <p className={`accordionContent ${accordion3Active ? "active" : ""}`}>
+          <p className={`accordionContent ${accordion3Active ? "active" : "inactive"}`}>
             In addition to drum reconditioning and recycling, we also provide a
             range of waste management services, including the removal and
             disposal of hazardous waste materials. The company is committed to
@@ -131,7 +128,7 @@ const About = () => {
         <div className="aboutContent">
           <div
             onClick={toggle1Accordion}
-            className={`accordion ${accordion1Active ? "active" : ""}`}
+            className={`accordion ${accordion1Active ? "active" : "inactive"}`}
           >
             <h3>Qui sommes-nous?</h3>
             <button>
@@ -144,7 +141,7 @@ const About = () => {
             </button>
           </div>
 
-          <p className={`accordionContent ${accordion1Active ? "active" : ""}`}>
+          <p className={`accordionContent ${accordion1Active ? "active" : "inactive"}`}>
             Nous sommes situés à Ajax, en Ontario, au Canada, et nous sommes
             spécialisés dans la fourniture de services de reconditionnement, de
             recyclage et de gestion des déchets de tambours en acier à diverses
@@ -153,7 +150,7 @@ const About = () => {
           </p>
           <div
             onClick={toggle2Accordion}
-            className={`accordion ${accordion2Active ? "active" : ""}`}
+            className={`accordion ${accordion2Active ? "active" : "inactive"}`}
           >
             <h3 className="borderTop">Ce que nous faisons</h3>
             <button>
@@ -165,7 +162,7 @@ const About = () => {
               />
             </button>
           </div>
-          <p className={`accordionContent ${accordion2Active ? "active" : ""}`}>
+          <p className={`accordionContent ${accordion2Active ? "active" : "inactive"}`}>
             Nous offrons une gamme de produits et de services, notamment la
             collecte de tambours usagés, la reconditionnement de tambours pour
             répondre aux normes de l'industrie, et la fourniture de tambours
@@ -176,7 +173,7 @@ const About = () => {
           </p>
           <div
             onClick={toggle3Accordion}
-            className={`accordion ${accordion3Active ? "active" : ""}`}
+            className={`accordion ${accordion3Active ? "active" : "inactive"}`}
           >
             <h3 className="borderTop">Notre objectif</h3>
             <button>
@@ -188,7 +185,7 @@ const About = () => {
               />
             </button>
           </div>
-          <p className={`accordionContent ${accordion3Active ? "active" : ""}`}>
+          <p className={`accordionContent ${accordion3Active ? "active" : "inactive"}`}>
             En plus du reconditionnement et du recyclage de tambours, nous
             offrons également une gamme de services de gestion des déchets, y
             compris l'enlèvement et l'élimination de matériaux dangereux. La
