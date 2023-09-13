@@ -9,7 +9,7 @@ nav {
 
     .navBar {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         padding: 0 0 1rem 0;
         
@@ -17,8 +17,7 @@ nav {
         
     
         .logo {
-            position: absolute;
-            left: 3rem;
+            padding: 0 0 0 1rem;
             height: 2.5rem;
             transform: translate(0%, 15%);
         }
@@ -129,9 +128,8 @@ nav {
         }
 
         .languageMenu {
-           position: absolute;
-           right: 0;
-           padding: 0 4rem 0 0;
+           
+            padding: 0 1rem 0 0;
             
             select {
                 border: none;

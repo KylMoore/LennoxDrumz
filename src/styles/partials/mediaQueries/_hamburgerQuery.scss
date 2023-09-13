@@ -1,13 +1,25 @@
+@media (min-width:320px) and (max-width: 480px) {
 
-@media (max-width: 700px) {
+}
 
-    .hamburger {
+@media (min-width:481px)  and (max-width: 768px) {
+     .hamburger {
         display: flex;
         position: fixed;
         left: 1rem;
         top: 1rem;
-        // padding-top: 10px;
-        // margin-left: 10px;
-        // z-index: 10;
+        
     }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 1281px) {
+    
 }
