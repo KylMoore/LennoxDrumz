@@ -9,10 +9,7 @@
             height: 4rem;
 
             .logo {
-                left: auto;
-                top: .5rem;
-
-                // transform: translate(50%, 50%);
+                margin: 0 auto;
             }
 
             .navBarList {
@@ -33,7 +30,29 @@
 }
 
 @media (min-width:769px) and (max-width:1024px) {
-    
+    nav {
+        .navBar {
+            .languageMenu {
+                select {
+                    font-size: 0.9rem;
+                }
+            }
+            .logo {
+                height: 2.2rem;
+            }
+            .navBarList {
+                ul {
+                    li {
+                        div,
+                        a {
+                            font-size: 0.9rem;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
     
 }
 
