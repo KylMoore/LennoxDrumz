@@ -411,6 +411,35 @@ nav .navBar .navBarList ul li div .productsAndServicesDropdown {
   background-color: #10277a;
   border-radius: 0.25rem;
 }
+nav .navBar .navBarList ul li div .productsAndServicesDropdown::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+  background-color: #10277a;
+  z-index: 10;
+}
+nav .navBar .navBarList ul li div .productsAndServicesDropdown::after {
+  content: "";
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  height: -50px;
+}
+nav .navBar .navBarList ul li div .productsAndServicesDropdown.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 250ms ease-in-out;
+}
+nav .navBar .navBarList ul li div .productsAndServicesDropdown.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 500ms ease-in-out;
+}
 nav .navBar .navBarList ul li div .productsAndServicesDropdown li {
   padding: 0.5rem 0;
   background-color: #10277a;

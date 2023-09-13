@@ -66,13 +66,13 @@ const NavBar = () => {
                 {translations[language].home}
               </Link>
             </li>
-            <li onMouseEnter={handleMouseEnter}>
-              <div style={{}}>
+            <li>
+              <div className="dropdownTrigger" onClick={() => setShowProductsMenu(!showProductsMenu)} >
                 {translations[language].productsAndServices}
-                {showProductsMenu && (
+                
                   <ul
                     onMouseLeave={handleMouseLeave}
-                    className="productsAndServicesDropdown"
+                    className= {`productsAndServicesDropdown ${showProductsMenu ? 'active' : 'inactive'}`}
                   >
                     <li>
                       <Link
@@ -102,7 +102,7 @@ const NavBar = () => {
                       </Link>
                     </li>
                   </ul>
-                )}
+                
               </div>
             </li>
             <li>
