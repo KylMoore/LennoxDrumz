@@ -376,7 +376,8 @@ nav .navBar .hamburger-menu {
   display: none;
   width: 100%;
   margin: 0 auto;
-  background: pink;
+  background: #fff;
+  opacity: 0.8;
 }
 nav .navBar .hamburger-menu .hamburger-checkbox {
   display: none;
@@ -430,8 +431,8 @@ nav .navBar .hamburger-menu .hamburger-content {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: pink;
-  width: 40%;
+  background-color: #fff;
+  width: 50%;
   height: 100vh;
   padding: 10px;
   margin: 0 auto;
@@ -461,27 +462,28 @@ nav .navBar .hamburger-menu .hamburger-content ul li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1rem;
 }
 nav .navBar .hamburger-menu .hamburger-content ul li:hover, nav .navBar .hamburger-menu .hamburger-content ul li:focus {
-  background: blue;
   border-radius: 1rem;
 }
 nav .navBar .hamburger-menu .hamburger-content ul li .fa-caret-down {
   padding: 0 0 0 11rem;
 }
 nav .navBar .hamburger-menu .hamburger-content ul li a {
-  color: white;
-  font-size: 1.6rem;
+  color: #020202;
+  font-size: 1rem;
   padding: 1.6rem 0;
 }
 nav .navBar .hamburger-menu .hamburger-content ul li a:hover, nav .navBar .hamburger-menu .hamburger-content ul li a:focus {
   cursor: pointer;
 }
+nav .navBar .hamburger-menu .hamburger-content ul li svg {
+  color: black;
+}
 nav .navBar .hamburger-menu .hamburger-content ul li:nth-of-type(1) {
-  background: blue;
   border-radius: 1rem;
 }
 nav .navBar .hamburger-menu .hamburger-content ul li:nth-of-type(6) {

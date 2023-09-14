@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faHouse, faHandshake, faHand, faAddressBook, faGear } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(faHouse, faHandshake, faHand, faAddressBook, faGear);
+
 const HamburgerMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -23,6 +29,7 @@ const HamburgerMenu = () => {
       <div className="hamburger-content">
         <ul>
           <li>
+            <FontAwesomeIcon icon="fa-solid fa-house" />
             <Link
               id="home"
               className="menu-item"
@@ -34,6 +41,7 @@ const HamburgerMenu = () => {
             </Link>
           </li>
           <li>
+            <FontAwesomeIcon icon="fa-solid fa-handshake" />
             <Link
               id="productsAndServices"
               className="menu-item"
@@ -45,6 +53,7 @@ const HamburgerMenu = () => {
             </Link>
           </li>
           <li>
+            <FontAwesomeIcon icon="fa-solid fa-hand" />
             <Link
               id="about"
               className="menu-item"
@@ -56,6 +65,7 @@ const HamburgerMenu = () => {
             </Link>
           </li>
           <li>
+            <FontAwesomeIcon icon="fa-solid fa-address-book" />
             <Link
               id="contact"
               className="menu-item"
@@ -67,6 +77,7 @@ const HamburgerMenu = () => {
             </Link>
           </li>
           <li>
+            <FontAwesomeIcon icon="fa-solid fa-gear" />
             <Link className="menu-item--small" href="null">
               Settings
             </Link>
