@@ -124,7 +124,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <img src="./assets/Lennox-Logo.jpg" alt="Lennox Drum logo" />
+      {/* <img src="./assets/Lennox-Logo.jpg" alt="Lennox Drum logo" /> */}
       <div className="footerContent wrapper">
         <div className="footerAddress">
           <h3>Address:</h3>
@@ -142,6 +142,7 @@ const Footer = () => {
         </div>
 
         <div className="footerMiddle">
+          <img src="./assets/Lennox-Logo.jpg" alt="Lennox Drum logo" />
           <ul>
             <li>
               <button

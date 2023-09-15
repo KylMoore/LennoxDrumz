@@ -1140,16 +1140,7 @@ footer {
   opacity: 1;
   display: flex;
   flex-direction: column;
-  position: relative;
   padding: 1rem 0 0 0;
-}
-footer img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -75%);
-  height: 2.5rem;
-  align-self: center;
 }
 footer .footerContent {
   display: flex;
@@ -1173,6 +1164,9 @@ footer .footerContent .footerAddress ul li {
   list-style: none;
   padding: 0 0 1rem 0;
 }
+footer .footerContent .footerAddress ul li span {
+  font-size: 0.8rem;
+}
 footer .footerContent .footerAddress ul li p {
   color: #020202;
   font-size: 0.75rem;
@@ -1182,6 +1176,7 @@ footer .footerContent .footerAddress ul li p {
 footer .footerContent .footerLinks {
   display: flex;
   flex-direction: column;
+  text-align: end;
 }
 footer .footerContent .footerLinks h3 {
   color: #020202;
@@ -1205,18 +1200,21 @@ footer .footerContent .footerLinks ul li a {
   transition: 0.5s;
 }
 footer .footerContent .footerLinks ul li a:hover, footer .footerContent .footerLinks ul li a:focus {
-  color: black;
+  color: #ff2e1d;
 }
 footer .footerMiddle {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .footerMiddle img {
+  height: 3rem;
 }
 footer .footerMiddle ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 0;
+  text-align: center;
 }
 footer .footerMiddle ul li {
   list-style: none;
@@ -1339,40 +1337,20 @@ footer .footerMiddle ul li button {
     width: 100%;
   }
 }
-@media (max-width: 930px) {
-  footer {
-    justify-content: flex-end;
+@media (min-width: 320px) and (max-width: 480px) {
+  footer .footerContent {
+    display: block;
   }
-  footer img {
-    top: 40%;
-  }
-  footer .footerAddress ul li {
-    padding: 0;
-  }
-  footer .footerAddress ul li span {
-    font-size: 0.75rem;
-  }
-  footer .footerMiddle ul {
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 400px) {
-  footer img {
-    top: 20%;
-    height: 2.5rem;
-  }
-  footer .wrapper {
-    margin: 0 auto;
-  }
-  footer .footerContent .footerMiddle ul li button {
-    font-size: 0.75rem;
-  }
-  footer .footerContent .footerAddress ul li {
-    padding: 0;
+  footer .footerContent .footerAddress,
+  footer .footerContent .footerLinks {
+    text-align: center;
   }
   footer .footerContent .footerAddress ul li span {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  footer .footerMiddle img {
+    height: 2rem;
   }
 }/*# sourceMappingURL=styles.css.map */
