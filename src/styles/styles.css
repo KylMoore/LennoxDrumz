@@ -731,8 +731,7 @@ nav .navBar .languageMenu select {
   justify-content: center;
 }
 .ibcsSection .wrapper .ibcsSectionContent .ibcsSectionContentBottom .ibcsSectionContentRight img {
-  max-height: 15rem;
-  max-width: 15rem;
+  width: 100%;
   border-radius: 0.25rem;
   margin: 1rem;
 }
@@ -1390,5 +1389,53 @@ footer .footerMiddle ul li button {
   }
   .drumsSection .wrapper .drumsSectionContent .drumsSectionTop .drumsSectionRight img {
     width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .ibcsSection .wrapper {
+    width: 100%;
+  }
+  .ibcsSection .wrapper p {
+    font-size: 0.8rem;
+  }
+  .ibcsSection .wrapper .ibcsSectionContent {
+    font-size: 1rem;
+  }
+  .ibcsSection .wrapper .ibcsSectionContent .ibcsSectionContentBottom {
+    flex-direction: column;
+  }
+  .ibcsSection .wrapper h1 {
+    font-size: 2rem;
+  }
+  .ibcsSection .wrapper h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .ibcsSection .wrapper {
+    width: 100%;
+  }
+  .ibcsSection .wrapper p {
+    font-size: 0.8rem;
+  }
+  .ibcsSection .wrapper .ibcsSectionContent {
+    font-size: 1rem;
+  }
+  .ibcsSection .wrapper .ibcsSectionContent .ibcsSectionContentBottom {
+    flex-direction: column;
+  }
+  .ibcsSection .wrapper h1 {
+    font-size: 2rem;
+  }
+  .ibcsSection .wrapper h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .ibcsSection .wrapper {
+    width: 100%;
+  }
+  .ibcsSection .wrapper p {
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=styles.css.map */
