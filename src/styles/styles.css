@@ -1562,4 +1562,40 @@ footer .footerMiddle ul li button {
   .aboutSection .aboutPageHeader .aboutContainer .aboutImageContainer img {
     margin: 1rem 0 0 0;
   }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .contactSection {
+    padding: 0;
+  }
+  .contactSection .wrapper {
+    width: 95%;
+  }
+  .contactSection .wrapper .contactContent {
+    flex-direction: column;
+  }
+  .contactSection .wrapper .contactContent form {
+    width: 100%;
+  }
+  .contactSection .wrapper .contactContent .contactHeader {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .contactSection {
+    padding: 0;
+  }
+  .contactSection .wrapper {
+    width: 95%;
+  }
+  .contactSection .wrapper .contactContent {
+    flex-direction: column;
+  }
+  .contactSection .wrapper .contactContent form {
+    width: 100%;
+  }
+  .contactSection .wrapper .contactContent .contactHeader {
+    width: 100%;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=styles.css.map */
