@@ -1598,4 +1598,43 @@ footer .footerMiddle ul li button {
     width: 100%;
     flex-direction: column;
   }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .productsAndServices {
+    padding: 0;
+  }
+  .productsAndServices .product {
+    min-width: none;
+    max-width: none;
+    width: 100%;
+  }
+  .productsAndServices .product .productsAndServicesContent .productsAndServicesLeftAndRight .productsAndServicesRight img {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .productsAndServices {
+    padding: 0;
+  }
+  .productsAndServices .product {
+    min-width: none;
+    max-width: none;
+    width: 100%;
+  }
+  .productsAndServices .product .productsAndServicesContent .productsAndServicesLeftAndRight .productsAndServicesRight img {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .productsAndServices {
+    padding: 0;
+  }
+  .productsAndServices .product {
+    min-width: none;
+    max-width: none;
+    width: 100%;
+  }
+  .productsAndServices .product .productsAndServicesContent .productsAndServicesLeftAndRight .productsAndServicesRight img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
