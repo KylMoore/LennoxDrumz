@@ -1224,6 +1224,9 @@ footer .footerMiddle ul li button {
   font-size: 0.75rem;
   cursor: pointer;
 }
+footer .footerMiddle ul li button:hover, footer .footerMiddle ul li button:focus {
+  color: #ff2e1d;
+}
 
 @media (min-width: 320px) and (max-width: 786px) {
   nav .navBar .hamburger-menu {
