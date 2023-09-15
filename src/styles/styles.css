@@ -400,7 +400,7 @@ nav .navBar .hamburger-menu .hamburger-label {
   height: 28px;
   width: 28px;
   cursor: pointer;
-  margin: 1rem 0 0 1rem;
+  margin: 0.4rem 0 0 1rem;
 }
 nav .navBar .hamburger-menu .hamburger-label .hamburger-icon {
   display: block;
@@ -432,7 +432,7 @@ nav .navBar .hamburger-menu .hamburger-content {
   top: 100%;
   left: 0;
   background-color: #fff;
-  width: 50%;
+  width: 200%;
   height: 100vh;
   padding: 10px;
   margin: 0 auto;
@@ -1240,14 +1240,71 @@ footer .footerMiddle ul li button {
     background: #10277a;
   }
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  nav .navBar {
+    height: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+  nav .navBar .navBarList {
+    display: none;
+  }
+  nav .navBar .logo {
+    height: 1rem;
+    padding: 0;
+  }
+  nav .navBar .hamburger-menu .hamburger-label {
+    margin: 0.4rem 0 0 0.4rem;
+  }
+  nav .navBar .hamburger-menu .hamburger-content {
+    width: 200px;
+  }
+  nav .navBar .hamburger-menu .hamburger-content ul {
+    justify-content: center;
+  }
+  nav .navBar .hamburger-menu .hamburger-content ul li:first-child {
+    margin: 4rem 0 0 0;
+  }
+  nav .navBar .hamburger-menu .hamburger-content ul li a {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+  nav .navBar .languageMenu {
+    margin: 0 1rem 0 0;
+  }
+  nav .navBar .languageMenu select {
+    font-size: 0.6rem;
+  }
+}
 @media (min-width: 481px) and (max-width: 768px) {
   nav .navBar {
     height: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+  }
+  nav .navBar .hamburger-menu .hamburger-label {
+    margin: 0.4rem 0 0 0.4rem;
+  }
+  nav .navBar .hamburger-menu .hamburger-content {
+    width: 200%;
+  }
+  nav .navBar .hamburger-menu .hamburger-content ul {
+    justify-content: center;
+  }
+  nav .navBar .hamburger-menu .hamburger-content ul li:first-child {
+    margin: 4rem 0 0 0;
+  }
+  nav .navBar .hamburger-menu .hamburger-content ul li a {
+    padding: 0.6rem;
   }
   nav .navBar .logo {
     margin: 0 auto;
+    height: 2rem;
+    padding: 0 1rem 0 0;
   }
-  nav .navBar .navBarList ul li {
+  nav .navBar .navBarList {
     display: none;
   }
   nav .navBar .languageMenu {
