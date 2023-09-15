@@ -1,0 +1,94 @@
+@media (min-width:320px) and (max-width: 480px) {
+    .aboutSection {
+        .wrapper {
+            width: 100%;
+        }
+        .aboutPageHeader {
+            .wrapper {
+                width: 100%;
+            }
+            .aboutContainer {
+                flex-direction: column;
+                .aboutContent {
+                    width: 100%;
+                    max-width: none;
+                    margin: 0;
+                }
+                .aboutImageContainer {
+                    width: 100%;
+                    max-width: none;
+                    img {
+                        margin: 1rem 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width:481px)  and (max-width: 768px) {
+    .aboutSection {
+        .wrapper {
+            width: 100%;
+        }
+        .aboutPageHeader {
+            .wrapper {
+                width: 100%;
+            }
+            .aboutContainer {
+                flex-direction: column;
+                .aboutContent {
+                    width: 100%;
+                    max-width: none;
+                    margin: 0;
+                }
+                .aboutImageContainer {
+                    width: 100%;
+                    max-width: none;
+                    img {
+                        margin: 1rem 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .aboutSection {
+        .wrapper {
+            width: 100%;
+        }
+        .aboutPageHeader {
+            .wrapper {
+                width: 100%;
+            }
+            .aboutContainer {
+                flex-direction: column;
+                .aboutContent {
+                    width: 100%;
+                    max-width: none;
+                    margin: 0;
+                }
+                .aboutImageContainer {
+                    width: 100%;
+                    max-width: none;
+                    img {
+                        margin: 1rem 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 1281px) {
+    
+}
