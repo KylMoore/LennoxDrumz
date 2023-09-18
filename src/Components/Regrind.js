@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "./LanguageContext";
 
+
+import Drum from "../assets/old-drums.jpg";
+
 const Regrind = () => {
   const { language } = useContext(LanguageContext);
 
@@ -43,7 +46,7 @@ const Regrind = () => {
             <p>{text.thirdParagraph}</p>
           </div>
           <div className="regrindSectionContentRight">
-            <img src="./assets/old-drums.jpg" alt="regrind" />
+            <img src={Drum} alt="regrind" />
           </div>
         </div>
       </div>

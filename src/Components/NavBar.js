@@ -7,6 +7,8 @@ import LanguageMenu from "./LanguageMenu";
 
 import { LanguageContext } from "./LanguageContext";
 
+import lennoxLogo from "../assets/Lennox-Logo.jpg";
+
 const NavBar = () => {
   const { language } = useContext(LanguageContext);
 
@@ -43,7 +45,7 @@ const NavBar = () => {
         <div className="navBar">
           <HamburgerMenu />
           <img
-            src="./assets/Lennox-Logo.jpg"
+            src={lennoxLogo}
             alt="Lennox Drum logo"
             className="logo"
           />

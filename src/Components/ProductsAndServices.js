@@ -1,6 +1,10 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
+
 import { LanguageContext } from "./LanguageContext";
+
 import { Link } from "react-router-dom";
+
+import Drums from "../assets/old-drums.jpg"
 
 const ProductsAndServices = () => {
   const { language } = useContext(LanguageContext);
@@ -95,7 +99,7 @@ const ProductsAndServices = () => {
                 </ul>
               </div>
               <div className="productsAndServicesRight">
-                <img src="./assets/old-drums.jpg" alt="" />
+                <img src={Drums} alt="" />
               </div>
             </div>
             <Link to="/drums" aria-label="Navigate to Drums page" title="Drums">

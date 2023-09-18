@@ -1,9 +1,13 @@
-
 import React, { useState, useContext } from "react";
+
 import { Link } from "react-router-dom";
+
 import DrumAcceptancePolicy from "./DrumAcceptancePolicy";
 import PreparingContainers from "./PreparingContainers";
+
 import { LanguageContext } from "./LanguageContext";
+
+import lennoxLogo from "../assets/Lennox-Logo.jpg";
 
 const Footer = () => {
   const [openPolicy, setOpenPolicy] = useState(false);
@@ -37,7 +41,7 @@ const Footer = () => {
         </div>
 
         <div className="footerMiddle">
-          <img src="./assets/Lennox-Logo.jpg" alt="Lennox Drum logo" />
+          <img src={lennoxLogo} alt="Lennox Drum logo" />
           <ul>
             <li>
               <button

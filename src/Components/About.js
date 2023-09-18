@@ -5,6 +5,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import oldDrum from "../assets/old-drum.jpg"
+
 library.add(faPlus)
 const About = () => {
   const { language } = useContext(LanguageContext);
@@ -33,7 +35,7 @@ const About = () => {
       <h2>A little bit about us.</h2>
       <div className="aboutContainer">
         <div className="aboutImageContainer">
-          <img src="./assets/old-drum.jpg" alt="an industrial barrel" />
+          <img src={oldDrum} alt="an industrial barrel" />
         </div>
         <div className="aboutContent">
           <div

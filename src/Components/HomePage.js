@@ -1,4 +1,4 @@
-
+import lennoxLogo from "../assets/Lennox-Logo.jpg"
 
 const HomePage = () => {
   return (
@@ -6,7 +6,7 @@ const HomePage = () => {
       <div className="homePageHeader wrapper">
         {/* <h1>Lennox Drum Ltd.</h1> */}
         <img
-          src="./assets/Lennox-logo.jpg"
+          src={lennoxLogo}
           alt="Lennox Drum ltd. logo"
         />
       </div>
