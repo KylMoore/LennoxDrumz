@@ -3,6 +3,9 @@ import { LanguageContext } from "./LanguageContext";
 import DrumAcceptancePolicy from "./DrumAcceptancePolicy";
 import PreparingContainers from "./PreparingContainers";
 
+import Drum from "../assets/old-drums.jpg";
+
+
 const Drums = () => {
   const [openPolicy, setOpenPolicy] = useState(false);
   const [openPreparation, setOpenPreparation] = useState(false);
@@ -70,7 +73,7 @@ const Drums = () => {
               </p>
             </div>
             <div className="drumsSectionRight">
-              <img src="./assets/old-drums.jpg" alt="drums" />
+              <img src={Drum} alt="drums" />
             </div>
           </div>
           <div className="drumsSectionBottom">
@@ -85,7 +88,7 @@ const Drums = () => {
             }}
           >
             {content[language].drumAcceptancePolicy}
-            {openPolicy ? <DrumAcceptancePolicy /> : null}
+            {openPolicy ? <DrumAcceptancePolicy handlePolicyClick={handlePolicyClick}  setOpenPolicy={setOpenPolicy}/> : null}
           </button>
           <button
             className="preparationButton"
@@ -94,7 +97,7 @@ const Drums = () => {
             }}
           >
             {content[language].preparingContainersForTransport}
-            {openPreparation ? <PreparingContainers /> : null}
+            {openPreparation ? <PreparingContainers setOpenPreparation={setOpenPreparation}/> : null}
           </button>
         </div>
       </div>

@@ -13,6 +13,12 @@ import { Route, Routes } from "react-router-dom";
 import React from "react";
 import { LanguageProvider } from "./Components/LanguageContext";
 
+// dropdown and services menu, add transitions and hover effects
+// terms and services and policy pages are modals that need some close buttons added, currently closes outside of modal
+// look for margin, padding, etc
+// media Queries
+//   
+
 function App() {
   return (
     <div className="App">

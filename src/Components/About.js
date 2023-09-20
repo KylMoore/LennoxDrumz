@@ -1,6 +1,13 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { LanguageContext } from "./LanguageContext";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import oldDrum from "../assets/old-drum.jpg"
+
+library.add(faPlus)
 const About = () => {
   const { language } = useContext(LanguageContext);
   const [accordion1Active, setAccordion1Active] = useState(false);
@@ -22,27 +29,31 @@ const About = () => {
     setAccordion3Active(!accordion3Active);
   };
 
+
   const englishContent = (
     <>
       <h2>A little bit about us.</h2>
       <div className="aboutContainer">
         <div className="aboutImageContainer">
-          <img src="./assets/old-drum.jpg" alt="an industrial barrel" />
+          <img src={oldDrum} alt="an industrial barrel" />
         </div>
         <div className="aboutContent">
           <div
             onClick={toggle1Accordion}
-            className={`accordion ${accordion1Active ? "active" : ""}`}
+            className={`accordion ${accordion1Active ? "active" : "inactive"}`}
           >
             <h3>Who are we?</h3>
             <button>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
-              </svg>
+              <FontAwesomeIcon
+                icon="fa-solid fa-plus"
+                style={{
+                  transform: `rotate(${accordion1Active ? "45deg" : "0deg"})`,
+                }}
+              />
             </button>
           </div>
 
-          <p className={`accordionContent ${accordion1Active ? "active" : ""}`}>
+          <p className={`accordionContent ${accordion1Active ? "active" : "inactive"}`}>
             We are located in Ajax, Ontario, Canada, and specialize in providing
             steel drum reconditioning, recycling, and waste management services
             to various industries. The company was founded in 1953 by Jim
@@ -52,17 +63,20 @@ const About = () => {
 
           <div
             onClick={toggle2Accordion}
-            className={`accordion ${accordion2Active ? "active" : ""}`}
+            className={`accordion ${accordion2Active ? "active" : "inactive"}`}
           >
             <h3 className="borderTop">What we do</h3>
             <button onClick={toggle2Accordion}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
-              </svg>
+              <FontAwesomeIcon
+                icon="fa-solid fa-plus"
+                style={{
+                  transform: `rotate(${accordion2Active ? "45deg" : "0deg"})`,
+                }}
+              />
             </button>
           </div>
 
-          <p className={`accordionContent ${accordion2Active ? "active" : ""}`}>
+          <p className={`accordionContent ${accordion2Active ? "active" : "inactive"}`}>
             We offer a range of products and services, including the collection
             of used drums, the reconditioning of drums to meet industry
             standards, and the supply of new and reconditioned drums. The
@@ -73,17 +87,20 @@ const About = () => {
 
           <div
             onClick={toggle3Accordion}
-            className={`accordion ${accordion3Active ? "active" : ""}`}
+            className={`accordion ${accordion3Active ? "active" : "inactive"}`}
           >
             <h3 className="borderTop">Our goal</h3>
             <button onClick={toggle3Accordion}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
-              </svg>
+              <FontAwesomeIcon
+                icon="fa-solid fa-plus"
+                style={{
+                  transform: `rotate(${accordion3Active ? "45deg" : "0deg"})`,
+                }}
+              />
             </button>
           </div>
 
-          <p className={`accordionContent ${accordion3Active ? "active" : ""}`}>
+          <p className={`accordionContent ${accordion3Active ? "active" : "inactive"}`}>
             In addition to drum reconditioning and recycling, we also provide a
             range of waste management services, including the removal and
             disposal of hazardous waste materials. The company is committed to
@@ -111,55 +128,73 @@ const About = () => {
           <img src="./assets/old-drum.jpg" alt="an industrial barrel" />
         </div>
         <div className="aboutContent">
-          <div onClick={toggle1Accordion} className={`accordion ${accordion1Active ? "active" : ""}`}>
+          <div
+            onClick={toggle1Accordion}
+            className={`accordion ${accordion1Active ? "active" : "inactive"}`}
+          >
             <h3>Qui sommes-nous?</h3>
-            <button >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
-              </svg>
+            <button>
+              <FontAwesomeIcon
+                icon="fa-solid fa-plus"
+                style={{
+                  transform: `rotate(${accordion1Active ? "45deg" : "0deg"})`,
+                }}
+              />
             </button>
           </div>
 
-          <p className={`accordionContent ${accordion1Active ? "active" : ""}`}>
+          <p className={`accordionContent ${accordion1Active ? "active" : "inactive"}`}>
             Nous sommes situés à Ajax, en Ontario, au Canada, et nous sommes
             spécialisés dans la fourniture de services de reconditionnement, de
             recyclage et de gestion des déchets de tambours en acier à diverses
-            industries. La société a été fondée en 1953 par Jim Lennox et sert la
-            région de l'Ontario depuis plus de 60 ans.
+            industries. La société a été fondée en 1953 par Jim Lennox et sert
+            la région de l'Ontario depuis plus de 60 ans.
           </p>
-          <div onClick={toggle2Accordion} className={`accordion ${accordion2Active ? "active" : ""}`}>
+          <div
+            onClick={toggle2Accordion}
+            className={`accordion ${accordion2Active ? "active" : "inactive"}`}
+          >
             <h3 className="borderTop">Ce que nous faisons</h3>
-            <button >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
-              </svg>
+            <button>
+              <FontAwesomeIcon
+                icon="fa-solid fa-plus"
+                style={{
+                  transform: `rotate(${accordion2Active ? "45deg" : "0deg"})`,
+                }}
+              />
             </button>
           </div>
-          <p className={`accordionContent ${accordion2Active ? "active" : ""}`}>
-            Nous offrons une gamme de produits et de services, notamment la collecte
-            de tambours usagés, la reconditionnement de tambours pour répondre aux
-            normes de l'industrie, et la fourniture de tambours neufs et
-            reconditionnés. La société dispose d'un vaste parc de camions qui
-            transportent les tambours, et elle exploite une usine de
-            reconditionnement entièrement automatisée capable de traiter jusqu'à 500
-            tambours par heure.
+          <p className={`accordionContent ${accordion2Active ? "active" : "inactive"}`}>
+            Nous offrons une gamme de produits et de services, notamment la
+            collecte de tambours usagés, la reconditionnement de tambours pour
+            répondre aux normes de l'industrie, et la fourniture de tambours
+            neufs et reconditionnés. La société dispose d'un vaste parc de
+            camions qui transportent les tambours, et elle exploite une usine de
+            reconditionnement entièrement automatisée capable de traiter jusqu'à
+            500 tambours par heure.
           </p>
-          <div onClick={toggle3Accordion} className={`accordion ${accordion3Active ? "active" : ""}`}>
+          <div
+            onClick={toggle3Accordion}
+            className={`accordion ${accordion3Active ? "active" : "inactive"}`}
+          >
             <h3 className="borderTop">Notre objectif</h3>
-            <button >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
-              </svg>
+            <button>
+              <FontAwesomeIcon
+                icon="fa-solid fa-plus"
+                style={{
+                  transform: `rotate(${accordion3Active ? "45deg" : "0deg"})`,
+                }}
+              />
             </button>
           </div>
-          <p className={`accordionContent ${accordion3Active ? "active" : ""}`}>
-            En plus du reconditionnement et du recyclage de tambours, nous offrons
-            également une gamme de services de gestion des déchets, y compris
-            l'enlèvement et l'élimination de matériaux dangereux. La société
-            s'engage en faveur de la durabilité environnementale et est agréée par
-            le ministère de l'Environnement, de la Conservation et des Parcs pour
-            exploiter une installation de stockage et de transfert de déchets
-            dangereux.
+          <p className={`accordionContent ${accordion3Active ? "active" : "inactive"}`}>
+            En plus du reconditionnement et du recyclage de tambours, nous
+            offrons également une gamme de services de gestion des déchets, y
+            compris l'enlèvement et l'élimination de matériaux dangereux. La
+            société s'engage en faveur de la durabilité environnementale et est
+            agréée par le ministère de l'Environnement, de la Conservation et
+            des Parcs pour exploiter une installation de stockage et de
+            transfert de déchets dangereux.
           </p>
         </div>
       </div>

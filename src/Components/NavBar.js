@@ -1,129 +1,21 @@
-// import React, { useState } from "react";
-// import { Link } from "react-router-dom";
-// import HamburgerMenu from "./HamburgerMenu";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faBars } from "@fortawesome/free-solid-svg-icons";
-// import LanguageMenu from "./LanguageMenu";
+import { useState, useContext } from "react";
 
-// const NavBar = () => {
-//   const [hamburgerOpen, setHamburgerOpen] = useState(false);
-//   const [showProductsMenu, setShowProductsMenu] = useState(false);
-
-//   const toggleHamburger = () => {
-//     setHamburgerOpen(!hamburgerOpen);
-//   };
-
-//   const toggleProductsMenu = () => {
-//     setShowProductsMenu(!showProductsMenu);
-//   };
-
-//   return (
-//     <nav>
-//       <div className="navBar">
-//         <img
-//           src="./assets/Lennox-Drum-Ltd.jpg"
-//           alt="Lennox Drum logo"
-//           className="logo"
-//         />
-//         <div className="navBarList">
-//           <ul>
-//             <li>
-//               <Link to="/" aria-label="Navigate to home page" title="Home">
-//                 Home
-//               </Link>
-//             </li>
-//             <li>
-//               <div onClick={toggleProductsMenu}>
-//                 Products & Services
-//                 {showProductsMenu && (
-//                   <ul className="productsAndServicesDropdown">
-//                     <li>
-//                       <Link
-//                         to="/drums"
-//                         aria-label="Navigate to Drums page"
-//                         title="Drums"
-//                       >
-//                         Drums
-//                       </Link>
-//                     </li>
-//                     <li>
-//                       <Link
-//                         to="/ibcs"
-//                         aria-label="Navigate to IBC's page"
-//                         title="IBC's"
-//                       >
-//                         IBC's
-//                       </Link>
-//                     </li>
-//                     <li>
-//                       <Link
-//                         to="/regrind"
-//                         aria-label="Navigate to regrind page"
-//                         title="Regrind"
-//                       >
-//                         Regrind
-//                       </Link>
-//                     </li>
-//                   </ul>
-//                 )}
-//               </div>
-//             </li>
-//             <li>
-//               <Link
-//                 to="/about"
-//                 aria-label="Navigate to about page"
-//                 title="About"
-//               >
-//                 About
-//               </Link>
-//             </li>
-//             <li>
-//               <Link
-//                 to="/contact"
-//                 aria-label="Navigate to contact page"
-//                 title="Contact"
-//               >
-//                 Contact
-//               </Link>
-//             </li>
-//           </ul>
-//         </div>
-//         <div className="hamburger" onClick={toggleHamburger}>
-//           <FontAwesomeIcon icon={faBars} className="hamburger-icon" />
-//           {hamburgerOpen && (
-//             <HamburgerMenu
-//               hamburgerOpen={hamburgerOpen}
-//               setHamburgerOpen={setHamburgerOpen}
-//             />
-//           )}
-//         </div>
-//         <LanguageMenu />
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default NavBar;
-
-import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+
 import HamburgerMenu from "./HamburgerMenu";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import LanguageMenu from "./LanguageMenu";
+
 import { LanguageContext } from "./LanguageContext";
+
+import lennoxLogo from "../assets/Lennox-Logo.jpg";
 
 const NavBar = () => {
   const { language } = useContext(LanguageContext);
-  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
   const [showProductsMenu, setShowProductsMenu] = useState(false);
 
-  const toggleHamburger = () => {
-    setHamburgerOpen(!hamburgerOpen);
-  };
-
-  const toggleProductsMenu = () => {
-    setShowProductsMenu(!showProductsMenu);
+  const handleMouseLeave = () => {
+    setShowProductsMenu(false);
   };
 
   const translations = {
@@ -148,29 +40,39 @@ const NavBar = () => {
   };
 
   return (
-    <nav>
-      <div className="navBar">
-        <img
-          src="./assets/Lennox-Logo.jpg"
-          alt="Lennox Drum logo"
-          className="logo"
-        />
-        <div className="navBarList">
-          <ul>
-            <li>
-              <Link
-                to="/"
-                aria-label="Navigate to home page"
-                title={translations[language].home}
-              >
-                {translations[language].home}
-              </Link>
-            </li>
-            <li>
-              <div onClick={toggleProductsMenu}>
-                {translations[language].productsAndServices}
-                {showProductsMenu && (
-                  <ul className="productsAndServicesDropdown">
+    <>
+      <nav>
+        <div className="navBar">
+          <HamburgerMenu />
+          <img
+            src={lennoxLogo}
+            alt="Lennox Drum logo"
+            className="logo"
+          />
+          <div className="navBarList">
+            <ul>
+              <li>
+                <Link
+                  to="/"
+                  aria-label="Navigate to home page"
+                  title={translations[language].home}
+                >
+                  {translations[language].home}
+                </Link>
+              </li>
+              <li>
+                <div
+                  className="dropdownTrigger"
+                  onClick={() => setShowProductsMenu(!showProductsMenu)}
+                >
+                  {translations[language].productsAndServices}
+
+                  <ul
+                    onMouseLeave={handleMouseLeave}
+                    className={`productsAndServicesDropdown ${
+                      showProductsMenu ? "active" : "inactive"
+                    }`}
+                  >
                     <li>
                       <Link
                         to="/drums"
@@ -199,41 +101,33 @@ const NavBar = () => {
                       </Link>
                     </li>
                   </ul>
-                )}
-              </div>
-            </li>
-            <li>
-              <Link
-                to="/about"
-                aria-label={`Navigate to ${translations[language].about} page`}
-                title={translations[language].about}
-              >
-                {translations[language].about}
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                aria-label={`Navigate to ${translations[language].contact} page`}
-                title={translations[language].contact}
-              >
-                {translations[language].contact}
-              </Link>
-            </li>
-          </ul>
+                </div>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  aria-label={`Navigate to ${translations[language].about} page`}
+                  title={translations[language].about}
+                >
+                  {translations[language].about}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  aria-label={`Navigate to ${translations[language].contact} page`}
+                  title={translations[language].contact}
+                >
+                  {translations[language].contact}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <LanguageMenu />
         </div>
-        <div className="hamburger" onClick={toggleHamburger}>
-          <FontAwesomeIcon icon={faBars} className="hamburger-icon" />
-          {hamburgerOpen && (
-            <HamburgerMenu
-              hamburgerOpen={hamburgerOpen}
-              setHamburgerOpen={setHamburgerOpen}
-            />
-          )}
-        </div>
-        <LanguageMenu />
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 

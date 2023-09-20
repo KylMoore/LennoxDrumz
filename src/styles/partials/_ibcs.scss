@@ -1,4 +1,4 @@
-@use "./variables" as *;
+
 
 .ibcsSection {
     padding: 1rem 0;
@@ -63,10 +63,10 @@
                     justify-content: center;
     
                     img {
-                        max-height: 15rem;
-                        max-width: 15rem;
+                        width: 100%;
                         border-radius: .25rem;
                         margin: 1rem;
+                        
                     }
                 }
             }

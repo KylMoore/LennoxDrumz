@@ -1,27 +1,96 @@
-@use "../variables" as *;
+@media (min-width:320px) and (max-width: 480px) {
+    nav {
+        .navBar {
+            height: 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3rem;
+            .navBarList {
+                display: none;
+            }
+            .logo {
+                height: 1rem;
+                padding: 0;
+            }
+            .hamburger-menu {
+                .hamburger-label {
+                    margin: 0.4rem 0 0 0.4rem;
+                }
+                .hamburger-content {
+                    width: 200px;
+                    ul { 
+                        
+                        justify-content: center;
+                        li:first-child {
+                            margin: 4rem 0 0 0;
+                        }
+                        li {
+                        a {
+                            padding: 0.6rem;
+                            font-size: 0.8rem;
+                        }
 
-@media (max-width: 700px) {
+                    }
+                        
+                    } 
+                        
+                }
+            }
+            .languageMenu {
+                margin: 0 1rem 0 0;
+                select {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
 
+@media (min-width: 481px) and  (max-width: 768px) {
     nav {
 
         .navBar {
             height: 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5rem;
+            .hamburger-menu {
+                .hamburger-label {
+                    margin: 0.4rem 0 0 0.4rem;
+                }
+                .hamburger-content {
+                    width: 200%;
+                    ul { 
+                        
+                        justify-content: center;
+                        li:first-child {
+                            margin: 4rem 0 0 0;
+                        }
+                        li {
+                        a {
+                            padding: 0.6rem;
+                            
+                        }
+
+                    }
+                        
+                    } 
+                        
+                }
+            }
+
+
 
             .logo {
-                left: auto;
-                top: .5rem;
-
-                // transform: translate(50%, 50%);
+                margin: 0 auto;
+                height: 2rem;
+                padding: 0 1rem 0 0;
             }
 
             .navBarList {
+                display: none;
 
-                ul {
-
-                    li {
-                        display: none;
-                    }
-                }
+                
             }
 
             .languageMenu {
@@ -29,4 +98,45 @@
             }
         }
     }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    nav {
+        .navBar {
+            .languageMenu {
+                select {
+                    font-size: 0.9rem;
+                }
+            }
+            .logo {
+                height: 2.2rem;
+            }
+            .navBarList {
+                
+                ul {
+                    li {
+                        div,
+                        a {
+                            font-size: 0.9rem;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 1281px) {
+    
+}
+
+@media (max-width: 700px) {
+
+    
 }

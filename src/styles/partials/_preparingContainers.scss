@@ -1,4 +1,4 @@
-@use "./variables" as *;
+
 
 .preparingContainersModal {
     position: fixed;
@@ -27,6 +27,7 @@
         margin: 5rem auto;
         padding: 1rem 0.5rem 0;
         border-radius: .25rem;
+        position: relative;
         
 
         h3 {

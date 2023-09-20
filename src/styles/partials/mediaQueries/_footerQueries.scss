@@ -1,81 +1,45 @@
-@use "../variables" as *;
-
-@media (max-width: 930px) {
-
+@media (min-width:320px) and (max-width: 480px) {
     footer {
-        justify-content: flex-end;
-
-        img {
-            top: 40%;
-        }
-        
-        .footerAddress {
-            
-            ul {
-                
-                li {
-                    padding: 0;
-                    
-                    span {
-                        font-size: .75rem;
-                    }
-                }
-            }
-        }
-
-        .footerMiddle {
-    
-            ul {
-                justify-content: flex-end;
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    }
-}
-
-@media (max-width: 400px) {
-
-    footer {
-
-        img {
-            top: 20%;
-            height: 2.5rem;
-        }
-
-        .wrapper {
-            margin: 0 auto;
-        }
-
         .footerContent {
-
-            .footerMiddle {
-    
-                ul {
-    
-                    li {
-    
-                        button {
-                            font-size: .75rem;
-            
-                        }
-                    }
-                }
+            display: block;
+            .footerAddress,
+            .footerLinks {
+                text-align: center;
             }
             
             .footerAddress {
-    
                 ul {
-    
                     li {
-                        padding: 0;
-    
                         span {
-                            font-size: .5rem;
+                            font-size: 0.8rem;
                         }
                     }
                 }
             }
         }
     }
+
+}
+
+@media (min-width:481px)  and (max-width: 768px) {
+    footer {
+        .footerMiddle {
+            img {
+                height: 2rem;
+            }
+        }
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 1281px) {
+    
 }

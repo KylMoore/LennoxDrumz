@@ -1,4 +1,4 @@
-@use "./variables" as *;
+
 
 .aboutSection {
     padding: 1rem 0;
@@ -53,6 +53,7 @@
                 justify-content: center;
                 flex-direction: column;
                 margin-left: 1rem;
+                transition: 250ms ease-in-out;
 
                 p {
                     font-size: .75rem;
@@ -78,6 +79,7 @@
         border-top: 1px solid white;
         border-bottom: 1px solid white;
         cursor: pointer;
+        transition: 250ms ease-in-out;
 
         &:hover,
         &:focus {
@@ -115,14 +117,24 @@
     }
 
     .accordionContent {
-        display: none;
-        transition: all .5s;
+        
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            transition: 250ms ease-in-out;
+
+        }
+        &.inactive {
+            opacity: 0;
+            visibility: collapse;
+            transform: translateX(-50px);
+            transition: 250ms ease-in-out;
+        }
+       
     }
 
-    .accordionContent.active {
-        display: block;
-        transition: all .5s;
-    }
+    
 
     p {
         background-color: rgba($fontSecondary, $alpha: 1);

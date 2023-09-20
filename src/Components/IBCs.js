@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "./LanguageContext";
 
+
+import Drum from "../assets/old-drums.jpg";
+
 const IBCs = () => {
   const { language } = useContext(LanguageContext);
 
@@ -44,7 +47,7 @@ const IBCs = () => {
         <h1>{text.title}</h1>
         <div className="ibcsSectionHeader">
           <h2>{text.subtitle}</h2>
-          {/* <img src="./assets/old-drums.jpg" alt="ibcs" /> */}
+          
         </div>
         <div className="ibcsSectionContent">
           <div className="ibcsSectionContentTop">
@@ -64,7 +67,7 @@ const IBCs = () => {
               </p>
             </div>
             <div className="ibcsSectionContentRight">
-              <img src="./assets/old-drums.jpg" alt="ibcs" />
+              <img src={Drum} alt="ibcs" />
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-@use "./variables" as *;
+
 
 .regrindSection {
     padding: 1rem 0;
@@ -55,8 +55,7 @@
                 align-items: center;
 
                 img {
-                    max-height: 15rem;
-                    max-width: 15rem;
+                    width: 100%;
                     border-radius: .25rem;
                     margin: 1rem;
                 }
