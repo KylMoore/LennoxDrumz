@@ -37,7 +37,7 @@ const Regrind = () => {
         <h1>{text.title}</h1>
         <div className="regrindSectionHeader">
           <h2>{text.subtitle}</h2>
-          {/* <img src="./assets/old-drums.jpg" alt="regrind" /> */}
+          
         </div>
         <div className="regrindSectionContent">
           <div className="regrindSectionContentLeft">

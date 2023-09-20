@@ -47,7 +47,7 @@ const IBCs = () => {
         <h1>{text.title}</h1>
         <div className="ibcsSectionHeader">
           <h2>{text.subtitle}</h2>
-          {/* <img src="./assets/old-drums.jpg" alt="ibcs" /> */}
+          
         </div>
         <div className="ibcsSectionContent">
           <div className="ibcsSectionContentTop">
