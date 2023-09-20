@@ -1,7 +1,7 @@
 
 
 .homePage {
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,11 +14,9 @@
         padding: 1rem;
         border-radius: 0.5rem;
         background-color: $fontSecondary;
-        opacity: .75;
 
         img {
             border-radius: .25rem;
-            opacity: .85;
             max-width: 75%;
             max-height: 75%;
         }

@@ -336,7 +336,7 @@ button:hover, button:focus {
 }
 
 .homePage {
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,11 +349,9 @@ button:hover, button:focus {
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: #FFFfff;
-  opacity: 0.75;
 }
 .homePage .homePageHeader img {
   border-radius: 0.25rem;
-  opacity: 0.85;
   max-width: 75%;
   max-height: 75%;
 }
@@ -369,7 +367,6 @@ nav .navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 1rem 0;
 }
 nav .navBar .hamburger-menu {
   position: relative;
@@ -496,7 +493,7 @@ nav .navBar .hamburger-menu .hamburger-checkbox:checked ~ .hamburger-content {
   visibility: visible;
 }
 nav .navBar .logo {
-  padding: 0 0 0 1rem;
+  padding: 0 0 1rem 1rem;
   height: 2.5rem;
   transform: translate(0%, 15%);
 }
@@ -1049,12 +1046,15 @@ nav .navBar .languageMenu select {
   background-color: #ffffff;
   max-width: 600px;
   min-width: 30%;
-  height: 40%;
-  max-height: 40%;
-  margin: 5rem auto;
+  height: 60%;
+  overflow-y: auto;
+  margin: 0 auto;
   padding: 1rem 0.5rem 0;
   border-radius: 0.25rem;
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .preparingContainersModal .preparingContainersContent h3 {
   margin: 0 0 1rem 0;
