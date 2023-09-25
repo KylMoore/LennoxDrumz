@@ -53,7 +53,8 @@ const About = () => {
             </button>
           </div>
 
-          <p className={`accordionContent ${accordion1Active ? "active" : "inactive"}`}>
+          <p className={`accordionContent ${accordion1Active ? "active" : "inactive"}`}
+          >
             We are located in Ajax, Ontario, Canada, and specialize in providing
             steel drum reconditioning, recycling, and waste management services
             to various industries. The company was founded in 1953 by Jim

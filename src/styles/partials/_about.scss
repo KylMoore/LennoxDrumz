@@ -27,7 +27,7 @@
         .aboutContainer {
             display: flex;
             // justify-content: space-between;
-            align-content: center;
+            // align-content: center;
             // margin: 1rem 0;
 
             .aboutImageContainer {
@@ -48,9 +48,9 @@
             .aboutContent {
                 display: flex;
                 width: 715px;
-                max-width: 715px;
-                min-height: 300px;
-                justify-content: center;
+                // max-width: 715px;
+                // min-height: 300px;
+                // justify-content: center;
                 flex-direction: column;
                 margin-left: 1rem;
                 transition: 250ms ease-in-out;
@@ -123,13 +123,17 @@
             visibility: visible;
             transform: translateY(0);
             transition: 250ms ease-in-out;
+            max-height: max-content;
 
         }
         &.inactive {
             opacity: 0;
+            max-height: 0;
             visibility: collapse;
+            
             transform: translateX(-50px);
             transition: 250ms ease-in-out;
+            inset: 0;
         }
        
     }

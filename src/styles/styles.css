@@ -810,7 +810,6 @@ nav .navBar .languageMenu select {
 }
 .aboutSection .aboutPageHeader .aboutContainer {
   display: flex;
-  align-content: center;
 }
 .aboutSection .aboutPageHeader .aboutContainer .aboutImageContainer {
   display: flex;
@@ -826,9 +825,6 @@ nav .navBar .languageMenu select {
 .aboutSection .aboutPageHeader .aboutContainer .aboutContent {
   display: flex;
   width: 715px;
-  max-width: 715px;
-  min-height: 300px;
-  justify-content: center;
   flex-direction: column;
   margin-left: 1rem;
   transition: 250ms ease-in-out;
@@ -884,12 +880,16 @@ nav .navBar .languageMenu select {
   visibility: visible;
   transform: translateY(0);
   transition: 250ms ease-in-out;
+  max-height: -moz-max-content;
+  max-height: max-content;
 }
 .aboutSection .accordionContent.inactive {
   opacity: 0;
+  max-height: 0;
   visibility: collapse;
   transform: translateX(-50px);
   transition: 250ms ease-in-out;
+  inset: 0;
 }
 .aboutSection p {
   background-color: white;
