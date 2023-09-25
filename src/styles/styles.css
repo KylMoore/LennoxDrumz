@@ -336,10 +336,8 @@ button:hover, button:focus {
 }
 
 .homePage {
-  min-height: 75vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  top: 25%;
 }
 .homePage .homePageHeader {
   display: flex;
@@ -1160,7 +1158,7 @@ footer .footerContent .footerAddress ul {
 footer .footerContent .footerAddress ul li {
   color: #020202;
   list-style: none;
-  padding: 0 0 1rem 0;
+  padding: 0 0 0 0;
 }
 footer .footerContent .footerAddress ul li span {
   font-size: 0.8rem;
@@ -1169,7 +1167,7 @@ footer .footerContent .footerAddress ul li p {
   color: #020202;
   font-size: 0.75rem;
   margin: 0;
-  padding: 0 0 0.25rem 0;
+  padding: 0 0 0 0;
 }
 footer .footerContent .footerLinks {
   display: flex;

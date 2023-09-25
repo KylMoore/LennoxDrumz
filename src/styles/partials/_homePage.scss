@@ -1,10 +1,13 @@
 
 
 .homePage {
-    min-height: 75vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // min-height: 65%;
+    // height: fit-content;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    position: relative;
+    top: 25%;
     
     .homePageHeader {
         display: flex;
