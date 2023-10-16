@@ -877,7 +877,7 @@ nav .navBar .languageMenu select {
 }
 .aboutSection .accordionContent.active {
   opacity: 1;
-  visibility: visible;
+  display: block;
   transform: translateY(0);
   transition: 250ms ease-in-out;
   max-height: -moz-max-content;
@@ -886,7 +886,7 @@ nav .navBar .languageMenu select {
 .aboutSection .accordionContent.inactive {
   opacity: 0;
   max-height: 0;
-  visibility: collapse;
+  display: none;
   transform: translateX(-50px);
   transition: 250ms ease-in-out;
   inset: 0;
