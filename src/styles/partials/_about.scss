@@ -113,9 +113,11 @@
   }
 
   .accordionContent {
+    overflow: hidden;
     &.active {
+    transition: max-height 0.3s ease-in-out;
       opacity: 1;
-      display: block;
+      padding: 1rem;
       transform: translateY(0);
       transition: 250ms ease-in-out;
       max-height: max-content;
@@ -123,7 +125,8 @@
     &.inactive {
       opacity: 0;
       max-height: 0;
-      display: none;
+      overflow: hidden;
+      
 
       transform: translateX(-50px);
       transition: 250ms ease-in-out;
@@ -134,8 +137,10 @@
   p {
     background-color: rgba($fontSecondary, $alpha: 1);
     color: $fontPrimary;
-    padding: 1rem;
+    
     border-radius: 0.25rem;
     font-size: 0.75rem;
+    overflow: hidden;
+    max-height: 0;
   }
 }
