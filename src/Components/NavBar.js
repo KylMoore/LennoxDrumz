@@ -9,6 +9,12 @@ import { LanguageContext } from "./LanguageContext";
 
 import lennoxLogo from "../assets/Lennox-Logo.jpg";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(faChevronDown, faChevronUp);
+
 const NavBar = () => {
   const { language } = useContext(LanguageContext);
 
@@ -44,11 +50,7 @@ const NavBar = () => {
       <nav>
         <div className="navBar">
           <HamburgerMenu />
-          <img
-            src={lennoxLogo}
-            alt="Lennox Drum logo"
-            className="logo"
-          />
+          <img src={lennoxLogo} alt="Lennox Drum logo" className="logo" />
           <div className="navBarList">
             <ul>
               <li>
@@ -60,7 +62,7 @@ const NavBar = () => {
                   {translations[language].home}
                 </Link>
               </li>
-              <li>
+              <li className="products">
                 <div
                   className="dropdownTrigger"
                   onClick={() => setShowProductsMenu(!showProductsMenu)}
@@ -102,6 +104,17 @@ const NavBar = () => {
                     </li>
                   </ul>
                 </div>
+                {!showProductsMenu ? (
+                  <FontAwesomeIcon
+                    icon="fa-solid fa-chevron-down"
+                    onClick={() => setShowProductsMenu(!showProductsMenu)}
+                  />
+                ) : (
+                  <FontAwesomeIcon
+                    icon="fa-solid fa-chevron-up"
+                    onClick={() => setShowProductsMenu(false)}
+                  />
+                )}
               </li>
               <li>
                 <Link

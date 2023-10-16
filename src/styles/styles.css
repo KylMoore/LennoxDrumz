@@ -514,7 +514,12 @@ nav .navBar .navBarList ul li {
   display: flex;
   list-style: none;
   padding-right: 10px;
-  color: orange;
+  align-items: center;
+  gap: 0.2rem;
+}
+nav .navBar .navBarList ul li svg {
+  font-size: 0.8rem;
+  cursor: pointer;
 }
 nav .navBar .navBarList ul li div {
   border-bottom: #ffffff 2px solid;
