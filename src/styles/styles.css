@@ -513,7 +513,7 @@ nav .navBar .navBarList ul li {
   gap: 0.2rem;
 }
 nav .navBar .navBarList ul li svg {
-  font-size: 0.8rem;
+  font-size: 0.4rem;
   cursor: pointer;
 }
 nav .navBar .navBarList ul li div {
