@@ -16,8 +16,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: #ffffff;
-        max-width: 60%;
-        height: 80%;
+        max-width: 30%;
+        min-width: 20%;
+
+        height: 60%;
         
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         overflow-y: auto;

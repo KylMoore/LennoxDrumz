@@ -12,6 +12,7 @@
         flex-direction: column;
         justify-content: center;
         padding: 1.5rem;
+        box-shadow: 5px 5px 10px black;
         
         h1 {
             margin: 0;
@@ -20,8 +21,8 @@
         }
 
         h2 {
-            margin: 2rem 0 0 0;
             color: $fontSecondary;
+            margin: 2rem 0 0 0;
         }
 
         p {
